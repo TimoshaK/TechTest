@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\praktika3_2\\officecollectiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|solutionrelative:officecollectiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\praktika3_2\\officeequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|solutionrelative:officeequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\praktika3_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCC1C97-CE59-4EC1-9999-AA3D85F00E67}|Praktika3_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OfficeCollectionDemo.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\OfficeCollectionDemo.cs",
+              "RelativeDocumentMoniker": "OfficeCollectionDemo.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\OfficeCollectionDemo.cs",
+              "RelativeToolTip": "OfficeCollectionDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:25:49.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OfficeEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\OfficeEquipment.cs",
+              "RelativeDocumentMoniker": "OfficeEquipment.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\OfficeEquipment.cs",
+              "RelativeToolTip": "OfficeEquipment.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:25:17.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\source\\repos\\Praktika3_2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:52:56.711Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
