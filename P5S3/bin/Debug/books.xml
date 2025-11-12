@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--список дат-->
+<dates>
+  <date id="1">
+    <day>19</day>
+    <month>10</month>
+    <year>2006</year>
+  </date>
+  <date id="2">
+    <day>04</day>
+    <month>10</month>
+    <year>2010</year>
+  </date>
+</dates>

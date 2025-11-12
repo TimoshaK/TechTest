@@ -1,0 +1,15 @@
+C:\Users\U-ber\TechTest\P5S3\bin\Debug\P5S3.exe.config
+C:\Users\U-ber\TechTest\P5S3\bin\Debug\P5S3.exe
+C:\Users\U-ber\TechTest\P5S3\bin\Debug\P5S3.pdb
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.csproj.AssemblyReference.cache
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\MainWindow.g.cs
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\App.g.cs
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3_MarkupCompile.cache
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\MainWindow.baml
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.g.resources
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.Properties.Resources.resources
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.csproj.GenerateResource.cache
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.exe
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.pdb
+C:\Users\U-ber\TechTest\P5S3\obj\Debug\P5S3.exe.config
