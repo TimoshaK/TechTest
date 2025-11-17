@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\BaseView.cs" />
+    <Compile Include="ViewModel\MainBaseView.cs" />
+    <Page Include="EditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +68,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EditWindow.xaml.cs">
+      <DependentUpon>EditWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -95,13 +104,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PathLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="button%28pressed%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="label.png" />
+    <Resource Include="button%28preessed%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

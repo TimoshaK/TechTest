@@ -37,7 +37,7 @@
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter TargetName="border" Property="Background">
                                     <Setter.Value>
-                                        <ImageBrush ImageSource="/button(pressed).png" 
+                                        <ImageBrush ImageSource="/button(preessed).png" 
                                                 Stretch="Fill"/>
                                     </Setter.Value>
                                 </Setter>
