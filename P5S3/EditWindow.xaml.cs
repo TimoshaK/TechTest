@@ -77,7 +77,7 @@ namespace P5S3
             }
             catch
             {
-                MessageBox.Show("Критическая ошибка !", "Ошибка",
+                MessageBox.Show("Критическая ошибка, проверьте данные !", "Ошибка",
                                   MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
@@ -97,7 +97,7 @@ namespace P5S3
             }
             catch
             {
-                MessageBox.Show("Критическая ошибка !", "Ошибка",
+                MessageBox.Show("Критическая ошибка, проверьте данные!", "Ошибка",
                                   MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -248,8 +248,6 @@ namespace P5S3
                     mylist.ItemsSource = p.Date;
                     InputGrid.Visibility = Visibility.Collapsed;
                     ChangeMode = false;
-                    MessageBox.Show("Данные обновлены!", "info",
-                        MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
@@ -327,7 +325,6 @@ namespace P5S3
                 (int)date.Attribute("month") == month &&
                 (int)date.Attribute("year") == year)) == true;
         }
-
         private void Save(object sender, EventArgs e)
         {
 
@@ -353,7 +350,11 @@ namespace P5S3
 
                     MessageBox.Show($"Файл успешно сохранен!\n{p.FilePath}", "Успех",
                         MessageBoxButton.OK, MessageBoxImage.Information);
+                    var mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Close();
                 }
+                
             }
             catch (UnauthorizedAccessException)
             {

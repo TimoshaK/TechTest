@@ -1,26 +1,28 @@
 ﻿<Window x:Class="BouncingButtons.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="XML редактор" Height="249" Width="200" Background="#bfe6ff">
+        Title="XML редактор" Height="240" Width="300" Background="#bfe6ff">
     <Window.Resources>
         <Style x:Key="ButtonStyle1" TargetType="Button">
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="#FFA9AECA"/>
             <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Arial"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border x:Name="border" 
-                            Background="{TemplateBinding Background}"
-                            RenderTransformOrigin="0.5,0.5">
+                Background="{TemplateBinding Background}"
+                RenderTransformOrigin="0.5,0.5">
                             <Border.RenderTransform>
                                 <ScaleTransform x:Name="scaleTransform" ScaleX="1" ScaleY="1"/>
                             </Border.RenderTransform>
                             <ContentPresenter HorizontalAlignment="Center" 
-                                        VerticalAlignment="Center"
-                                        Margin="{TemplateBinding Padding}"/>
+                            VerticalAlignment="Center"
+                            Margin="{TemplateBinding Padding}"/>
                         </Border>
                         <ControlTemplate.Triggers>
                             <!-- Нормальное состояние -->
@@ -28,7 +30,7 @@
                                 <Setter TargetName="border" Property="Background">
                                     <Setter.Value>
                                         <ImageBrush ImageSource="/button.png" 
-                                                Stretch="Fill"/>
+                                    Stretch="Fill"/>
                                     </Setter.Value>
                                 </Setter>
                             </Trigger>
@@ -38,18 +40,15 @@
                                 <Setter TargetName="border" Property="Background">
                                     <Setter.Value>
                                         <ImageBrush ImageSource="/button(preessed).png" 
-                                                Stretch="Fill"/>
+                                    Stretch="Fill"/>
                                     </Setter.Value>
                                 </Setter>
                                 <Trigger.EnterActions>
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimation Storyboard.TargetName="scaleTransform"
-                                                       Storyboard.TargetProperty="ScaleX"
-                                                       To="1.05" Duration="0:0:0.2"/>
-                                            <DoubleAnimation Storyboard.TargetName="scaleTransform"
-                                                       Storyboard.TargetProperty="ScaleY"
-                                                       To="1.05" Duration="0:0:0.2"/>
+                                           Storyboard.TargetProperty="ScaleY"
+                                           To="1.05" Duration="0:0:0.2"/>
                                         </Storyboard>
                                     </BeginStoryboard>
                                 </Trigger.EnterActions>
@@ -57,18 +56,15 @@
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimation Storyboard.TargetName="scaleTransform"
-                                                       Storyboard.TargetProperty="ScaleX"
-                                                       To="1" Duration="0:0:0.2"/>
+                                           Storyboard.TargetProperty="ScaleX"
+                                           To="1" Duration="0:0:0.2"/>
                                             <DoubleAnimation Storyboard.TargetName="scaleTransform"
-                                                       Storyboard.TargetProperty="ScaleY"
-                                                       To="1" Duration="0:0:0.2"/>
+                                           Storyboard.TargetProperty="ScaleY"
+                                           To="1" Duration="0:0:0.2"/>
                                         </Storyboard>
                                     </BeginStoryboard>
                                 </Trigger.ExitActions>
                             </Trigger>
-
-                            <!-- Состояние нажатия -->
-                            
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
@@ -98,18 +94,35 @@
         <Rectangle Grid.Row="4" Grid.ColumnSpan="5" Fill="#062233"/>
         <Rectangle Grid.Column="0" Grid.RowSpan="5" Fill="#062233"/>
         <Rectangle Grid.Column="4" Grid.RowSpan="5" Fill="#062233"/>
-        <StackPanel Grid.Row="2" Grid.Column="2" Margin="0">
-            <Label Content="XML-редактор"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
-                   Height ="40" Width="130" FontWeight="Bold" Foreground="White" 
-                   Cursor="Hand" Margin="0,10,0,0">
-                <Label.Background>
-                    <ImageBrush ImageSource="/label.png" Stretch="Fill"/>
-                </Label.Background>
-               
-            </Label>
-            <Button Click="CreateXML" Content="Создать XML" Style ="{StaticResource ButtonStyle1}" Width="100" Height="50" Margin="0,15,0,10"/>
-            <Button Click="OpenXML" Content="Открыть файл" Style ="{StaticResource ButtonStyle1}" Width="100" Height="50" />
-            
-        </StackPanel>
+        <Grid Grid.Row="2" Grid.Column="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- загоголовк - путь к файлу -->
+        
+            <Border Grid.Row="0"
+            Margin="1"
+            BorderThickness="0" BorderBrush="Transparent">
+            <Border.Background>
+                <ImageBrush ImageSource="/button(preessed).png"  Stretch="Fill"/>
+            </Border.Background>
+            <TextBlock 
+                   Text="Редактор XML"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   FontSize="20"
+                   Foreground="#FFA9AECA"
+                   FontWeight="Bold"
+                   FontFamily="Arial"
+                   Margin="2"
+                   TextAlignment="Center"/>
+        </Border>
+            <Button Click="CreateXML" Content="Создать новый XML" Style ="{StaticResource ButtonStyle1}" Grid.Row="1"  Margin="1"/>
+            <Button Click="OpenXML" Content="Открыть существующий" Style ="{StaticResource ButtonStyle1}" Grid.Row="2" Margin="1"/>
+        </Grid>
+
     </Grid>
 </Window>

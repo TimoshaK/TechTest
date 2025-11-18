@@ -220,7 +220,7 @@
                 <!-- загоголовк - путь к файлу -->
                 <Border Grid.Row="0"
                         Margin="1"
-                        RenderTransformOrigin="0.5,0.5" BorderThickness="0" BorderBrush="Transparent">
+                        RenderTransformOrigin="0.5,0.5" BorderThickness="0" BorderBrush="Transparent" Padding="5">
                     <Border.Background>
                         <ImageBrush ImageSource="/button(preessed).png"  Stretch="Fill"/>
                     </Border.Background>
@@ -329,20 +329,24 @@
 
                         <Border Grid.Row="1" Grid.ColumnSpan="8" Margin="1">
                             <StackPanel Orientation="Horizontal">
-                        <TextBlock Text=" ID:" Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Text=" ID:" Margin="5" VerticalAlignment="Center"
+                                   FontFamily="Arial" Foreground="#FFA9AECA"/>
                         <TextBox x:Name="IdTextBox1" Grid.Row="1" 
                                     Margin="5" Width="20"
                                     Text="{Binding Path=Id, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                                 
-                        <TextBlock Text="День:"  Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Text="День:"  Margin="5" VerticalAlignment="Center"
+                                   FontFamily="Arial" Foreground="#FFA9AECA"/>
                         <TextBox x:Name="DayTextBox1" Grid.Row="1" Width="30"
                                     Margin="5" 
                                     Text="{Binding Path=Day, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
-                        <TextBlock Text="Месяц:"  Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Text="Месяц:"  Margin="5" VerticalAlignment="Center"
+                                   FontFamily="Arial" Foreground="#FFA9AECA"/>
                         <TextBox x:Name="MonthTextBox1" Grid.Row="1" 
                                     Margin="5" Width="20"
                                     Text="{Binding Path=Month, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
-                        <TextBlock Text="Год:" Grid.Row="1" Grid.Column="6" Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Text="Год:" Grid.Row="1" Grid.Column="6" Margin="5" VerticalAlignment="Center"
+                                   FontFamily="Arial" Foreground="#FFA9AECA"/>
                         <TextBox x:Name="YearTextBox1"  
                                     Margin="5" Width="30"
                                     Text="{Binding Path=Year, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
@@ -361,9 +365,9 @@
                             <!-- Для названий столбцов -->
                             <Style TargetType="GridViewColumnHeader">
                                 <Setter Property="Background" Value="#062233"/>
-                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Foreground" Value="#FFA9AECA"/>
+                                <Setter Property="FontFamily" Value="Arial"/>
                                 <Setter Property="FontWeight" Value="Bold"/>
-                                <Setter Property="BorderBrush" Value="Black"/>
                                 <Setter Property="IsHitTestVisible" Value="False"/>
                             </Style>
                         </ListView.Resources>
@@ -416,7 +420,9 @@
                         </ListView.ContextMenu>
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header=" ID "  DisplayMemberBinding="{Binding Attribute[id].Value}" Width="25"/>
+                                <GridViewColumn  Header=" ID:" DisplayMemberBinding="{Binding Attribute[id].Value}" Width="25">
+                                </GridViewColumn>
+                                                
                                 <GridViewColumn Header="День" DisplayMemberBinding="{Binding Attribute[day].Value}" Width="45"/>
                                 <GridViewColumn Header="Месяц" DisplayMemberBinding="{Binding Attribute[month].Value}" Width="60"/>
                                 <GridViewColumn Header="Год / Пкм.для сортировки" DisplayMemberBinding="{Binding Attribute[year].Value}" Width="159"/>
@@ -428,7 +434,7 @@
                     </ScrollViewer.Resources>
                 </ScrollViewer>
                 <!-- Панель добавления данных -->
-                <Border x:Name="InputBorder" Grid.Row="2"  BorderBrush="Black" BorderThickness="2" Padding="0">
+                <Border x:Name="InputBorder" Grid.Row="2"  BorderBrush="Black" BorderThickness="0,5,0,0" Padding="0">
                     <Grid x:Name="InputGrid" Visibility="Collapsed">
                         <Grid.RowDefinitions> 
                             <RowDefinition Height="Auto"/>
@@ -444,7 +450,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Добавление новой даты" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                        <TextBlock Text="Добавление/Изменение даты" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
                     FontWeight="Bold" FontSize="12" Margin="0,0,0,10" HorizontalAlignment="Center"/>
 
                         <TextBlock Text="ID:" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
@@ -464,8 +470,8 @@
 
                         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" 
                     HorizontalAlignment="Center" Margin="0,10,0,0">
-                            <Button Content="Добавить" Click="ConfirmAddButton_Click" Margin="5" Width="80"/>
-                            <Button Content="Отмена" Click="CancelAddButton_Click" Margin="5" Width="80"/>
+                            <Button Content="Добавить" Click="ConfirmAddButton_Click" Style ="{StaticResource ButtonStyle2}" Margin="5" Width="80"/>
+                            <Button Content="Отмена" Click="CancelAddButton_Click" Style ="{StaticResource ButtonStyle2}" Margin="5" Width="80"/>
                         </StackPanel>
                     </Grid>
                 </Border>
