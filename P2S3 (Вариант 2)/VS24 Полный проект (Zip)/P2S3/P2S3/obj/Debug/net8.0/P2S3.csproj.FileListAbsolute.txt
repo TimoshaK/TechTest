@@ -1,0 +1,70 @@
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfoInputs.cache
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfo.cs
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.csproj.CoreCompileInputs.cache
+G:\VisualStudio\repos\P2S3\bin\Debug\net8.0\P2S3.exe
+G:\VisualStudio\repos\P2S3\bin\Debug\net8.0\P2S3.deps.json
+G:\VisualStudio\repos\P2S3\bin\Debug\net8.0\P2S3.runtimeconfig.json
+G:\VisualStudio\repos\P2S3\bin\Debug\net8.0\P2S3.dll
+G:\VisualStudio\repos\P2S3\bin\Debug\net8.0\P2S3.pdb
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.dll
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\refint\P2S3.dll
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.pdb
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\P2S3.genruntimeconfig.cache
+G:\VisualStudio\repos\P2S3\obj\Debug\net8.0\ref\P2S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\bin\Debug\net8.0\P2S3.exe
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\bin\Debug\net8.0\P2S3.deps.json
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\bin\Debug\net8.0\P2S3.runtimeconfig.json
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\bin\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\bin\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfo.cs
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\refint\P2S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\P2S3.genruntimeconfig.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P2S3\P2S3\obj\Debug\net8.0\ref\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfo.cs
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\refint\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.exe
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.deps.json
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.runtimeconfig.json
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.genruntimeconfig.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\ref\P2S3.dll
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.exe
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.deps.json
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.runtimeconfig.json
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.dll
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\bin\Debug\net8.0\P2S3.pdb
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfoInputs.cache
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfo.cs
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.csproj.CoreCompileInputs.cache
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.dll
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\refint\P2S3.dll
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.pdb
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\P2S3.genruntimeconfig.cache
+G:\Telegram downl\P2S3\P2S3\P2S3\P2S3\P2S3\obj\Debug\net8.0\ref\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\bin\Debug\net8.0\P2S3.exe
+C:\Users\U-ber\Downloads\P2S3\P2S3\bin\Debug\net8.0\P2S3.deps.json
+C:\Users\U-ber\Downloads\P2S3\P2S3\bin\Debug\net8.0\P2S3.runtimeconfig.json
+C:\Users\U-ber\Downloads\P2S3\P2S3\bin\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\bin\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.AssemblyInfo.cs
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\refint\P2S3.dll
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.pdb
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\P2S3.genruntimeconfig.cache
+C:\Users\U-ber\Downloads\P2S3\P2S3\obj\Debug\net8.0\ref\P2S3.dll

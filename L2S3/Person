@@ -1,0 +1,45 @@
+using System;
+
+namespace L2S3
+{
+    public class Person : Object{
+        public string Name { get; set; }
+        public int Age{ get; set; }
+        public DateTime BirthDay{ get; set; }
+        public Person(){
+            Name = "Иван";
+            Age = 20;
+            BirthDay = 11.11.2004;
+        }
+        public Person(string name, int age, DateTime birthDay)
+        {
+            Name = name;
+            Age = age;
+            birthDay = BirthDay;
+        }
+        public override bool Equals(Object obj){
+
+        }
+        public override bool Equals(Object obj1, Object obj2){
+
+        }
+        public override void Finelize(){
+            
+        }
+        public override int GetHashCode(){
+            
+        }
+        public override type GetType(){
+            
+        }
+        public override Object MemberwiseClone(){
+            
+        }
+        public override void ReferenceEquals(Object? a, Object? b){
+            
+        }
+        public override string ToString(){
+            
+        }
+    }
+}

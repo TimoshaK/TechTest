@@ -1,0 +1,10 @@
+using System;
+
+namespace L2S3
+{
+    public class Officer:Person{
+        public Placement place {get; set;}
+        public DateTime EndDate {get; set;}
+        public DateTime CountOfYears {get; set;}
+    }
+}

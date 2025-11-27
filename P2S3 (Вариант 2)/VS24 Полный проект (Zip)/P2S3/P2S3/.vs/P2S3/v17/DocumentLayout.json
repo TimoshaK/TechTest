@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\pethouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:pethouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\eats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:eats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\kitten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:kitten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\catweight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:catweight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|c:\\users\\u-ber\\techtest\\p2s3 (\u0432\u0430\u0440\u0438\u0430\u043D\u0442 2)\\vs24 \u043F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (zip)\\p2s3\\p2s3\\catbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5847DD68-F01A-47C2-8B7C-FE65B7CE7971}|P2S3.csproj|solutionrelative:catbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Eats.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Eats.cs",
+              "RelativeDocumentMoniker": "Eats.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Eats.cs",
+              "RelativeToolTip": "Eats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T16:55:02.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CatBreed.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\CatBreed.cs",
+              "RelativeDocumentMoniker": "CatBreed.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\CatBreed.cs",
+              "RelativeToolTip": "CatBreed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T16:54:42.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CatWeight.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\CatWeight.cs",
+              "RelativeDocumentMoniker": "CatWeight.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\CatWeight.cs",
+              "RelativeToolTip": "CatWeight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T16:53:42.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PetHouse.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\PetHouse.cs",
+              "RelativeDocumentMoniker": "PetHouse.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\PetHouse.cs",
+              "RelativeToolTip": "PetHouse.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwC0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:02:21.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Kitten.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Kitten.cs",
+              "RelativeDocumentMoniker": "Kitten.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Kitten.cs*",
+              "RelativeToolTip": "Kitten.cs*",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAuwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:00:54.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cat.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Cat.cs",
+              "RelativeDocumentMoniker": "Cat.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Cat.cs",
+              "RelativeToolTip": "Cat.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAiwIoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:00:35.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Animal.cs",
+              "RelativeDocumentMoniker": "Animal.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Animal.cs",
+              "RelativeToolTip": "Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:58:04.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\U-ber\\TechTest\\P2S3 (\u0412\u0430\u0440\u0438\u0430\u043D\u0442 2)\\VS24 \u041F\u043E\u043B\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442 (Zip)\\P2S3\\P2S3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQCAAAAAAAAAAAIwDoCAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T16:25:04.761Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+using System;
+
+namespace L2S3
+{
+    public class Student:Person{
+        public int Course {get; set;}
+        public Specialization Way {get; set;}
+    }
+}
