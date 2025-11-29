@@ -13,6 +13,16 @@ namespace L2S3
         Russia,
         Belarus,
         China,
-        KNDR
+        KNDR,
+        No_info
+    }
+    public enum Work
+    {
+        Programmer,
+        Seller,
+        Tokar,
+        Scientist,
+        Doctor,
+        unemployed
     }
 }

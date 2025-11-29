@@ -112,7 +112,7 @@ namespace L2S3{
         public static string GetMiddleCharacter(this string text)
         {
             if (string.IsNullOrEmpty(text))
-                return "🚫 Пустая строка";
+                return "Пустая строка";
 
             int middleIndex = text.Length / 2;
             

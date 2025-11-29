@@ -1,9 +1,0 @@
-using System;
-
-namespace L2S3
-{
-    public sealed class Worker:Person{
-        public int WorkTime {get; set;}
-        public int Salary {get; set;}
-    }
-}
