@@ -1,0 +1,15 @@
+C:\Users\U-ber\TechTest\L2S3\L2S3\bin\Debug\net9.0\L2S3.exe
+C:\Users\U-ber\TechTest\L2S3\L2S3\bin\Debug\net9.0\L2S3.deps.json
+C:\Users\U-ber\TechTest\L2S3\L2S3\bin\Debug\net9.0\L2S3.runtimeconfig.json
+C:\Users\U-ber\TechTest\L2S3\L2S3\bin\Debug\net9.0\L2S3.dll
+C:\Users\U-ber\TechTest\L2S3\L2S3\bin\Debug\net9.0\L2S3.pdb
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.AssemblyInfo.cs
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.sourcelink.json
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.dll
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\refint\L2S3.dll
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.pdb
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\L2S3.genruntimeconfig.cache
+C:\Users\U-ber\TechTest\L2S3\L2S3\obj\Debug\net9.0\ref\L2S3.dll

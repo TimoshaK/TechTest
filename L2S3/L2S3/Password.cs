@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace L2S3{
-    public class Password{
+    public class Password {
         private string _value;
-
-        
-
+        public char this[int x]
+        {
+            get {  return _value[x]; }
+        }
         public string Value => _value;
         public int Length => _value.Length;
-
         // Замена последнего символа
         public Password ReplaceLastCharacter(char newChar)
         {
@@ -24,6 +24,10 @@ namespace L2S3{
         public Password(string password)
         {
             _value = password ?? string.Empty;
+        }
+        public Password()
+        {
+            _value = "1234";
         }
         // Сравнение длин паролей
         public bool IsLongerThan(Password other)
@@ -59,7 +63,6 @@ namespace L2S3{
         {
             if (string.IsNullOrEmpty(_value) || _value.Length < 8)
                 return false;
-
             bool hasUpper = _value.Any(char.IsUpper);
             bool hasLower = _value.Any(char.IsLower);
             bool hasDigit = _value.Any(char.IsDigit);

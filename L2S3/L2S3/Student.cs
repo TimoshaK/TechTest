@@ -3,56 +3,62 @@ using System;
 namespace L2S3
 {
     public class Student:Person{
+        private int _course;
+        private int _semester;
         public int Course
         {
-            get { return Course; }
+            get { return _course; }
             set
             {
-                if (value > 0 && value < 5)
+                if (value > 0 && value <= 5)
                 {
-                    Course = value;
+                    _course = value;
                 }
                 else
                 {
-                    Course = 2;
+                    _course = 2;
                 }
             }
         }
         public int Semester
         {
-            get { return Semester; }
+            get { return _semester; }
             set
             {
-                if (value > 0 && value < 8 && (Course*2 == Semester || Course * 2 - 1 == Semester) )
+                if (value > 0 && value < 8 && (Course*2 == _semester || Course * 2 - 1 == _semester) )
                 {
 
-                    Semester = value;
+                    _semester = value;
                 }
                 else
                 {
-                    Semester = (Course * 2 - 1 >0)? Course * 2 - 1: 1;
+                    _semester = (Course * 2 - 1 >0)? Course * 2 - 1: 1;
                 }
             }
         }
         public Specialization Way {get; set;}
         public Student() : base()
         {
-            WorkDayTime = 0;
-            StartWorkDay = new DateTime();
-            Profession = Work.unemployed;
+            Course = 1;
+            Semester = 1;
+            Way = Specialization.engineering;
         }
-        public Worker(string Name, DateTime BirthDay, int Age, DateTime startWorkDay, int workDayTime, Work profession = Work.unemployed) : base(Name, Age, BirthDay)
+        public Student(string Name, int Age, DateTime BirthDay,  int course, int semester, 
+            Specialization way = Specialization.engineering, string pas = "1234") : base(Name, Age, BirthDay, pas)
         {
-            WorkDayTime = workDayTime;
-            StartWorkDay = startWorkDay;
-            Profession = profession;
+            Course = course;
+            Semester = semester;
+            Way = way;
+        }
+        public string BaseInfo()
+        {
+            return $"{base.ToString()}\n" +
+                $"Курс: {Course}, Семестр: {Semester}\n" +
+                $"Направление: {Way}";
         }
         public override string ToString()
         {
-            string str = Profession == Work.unemployed ? "Без работы." : StartWorkDay.ToString("HH mm");
-            return $"{base.ToString()}\n" +
-                $"Профессия: {Profession}, Рабочий день(часов): {WorkDayTime}\n" +
-                $"Начало рабочего дня: {str}";
+            return $"{base.ToString()}";
         }
     }
 }

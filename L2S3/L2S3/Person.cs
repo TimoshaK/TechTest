@@ -3,44 +3,54 @@ using System;
 namespace L2S3
 {
     public class Person{
+        private int _age;
+        private Password _password = new Password("1234");
         public string Name { get; set; }
         public int Age
         {
-            get { return Age; }
+            get { return _age; }
             set
             {
                 if (value > 0)
                 {
-                    Age = value;
+                    _age = value;
                 }
                 else
                 {
-                    Age = 18;
+                    _age = 18;
                 }
             }
         }
         public DateTime BirthDay{ get; set; }
+        private Password password
+        {
+            set
+            {
+                _password = value;
+            }
+        }
         public Person()
         {
             Name = "Иван";
             Age = 20;
             BirthDay = new DateTime(2004, 11, 25);
         }
-        public Person(string name, int age, DateTime birthDay)
+        public Person(string name, int age, DateTime birthDay, string pas ="1234")
         {
             Name = name;
             Age = age;
-            birthDay = BirthDay;
+            BirthDay = birthDay;
+            password = new Password(pas);
+        }
+        public bool ComparePasswords(Password password)
+        {
+            return (this._password).Equals(password);
         }
         public override bool Equals(Object? obj)
         {
-
             if (obj == null) return false;
-
             if (ReferenceEquals(this, obj)) return true;
-
             if (obj is not Person person) return false;
-
             return this.Name == person.Name && this.Age == person.Age;
         }
         public override int GetHashCode(){

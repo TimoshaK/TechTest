@@ -3,33 +3,28 @@ using System;
 namespace L2S3
 {
     public class Officer:Person{
+        private DateTime _endDate;
         public Placement Place {  get; set; }
-        public DateTime StartDate 
-        {
-            get { return StartDate; }
-            set { StartDate = value; } 
-        }
+        public DateTime StartDate {  get; set; }
         public DateTime EndDate 
         {
-            get { return EndDate; }
+            get { return _endDate; }
             set 
             {
                 if (value < StartDate)
                 {
-                    EndDate = StartDate;
+                    _endDate = StartDate;
                     StartDate = value;
                 }
                 else
                 {
-                    EndDate = value;
+                    _endDate = value;
                 }
             }
         }
-        public Officer(Person _person, DateTime startDate, DateTime endDate, Placement? place = null)
+        public Officer(string Name,int Age, DateTime BirthDay,  DateTime startDate, 
+            DateTime endDate, Placement? place = null, string pas = "1234") : base(Name, Age, BirthDay, pas)
         {
-            Name = _person.Name;
-            BirthDay = _person.BirthDay;
-            Age = _person.Age;
             StartDate = startDate;
             EndDate = endDate;
             if (place != null)
@@ -41,11 +36,15 @@ namespace L2S3
                 Place = Placement.No_info;
             }
         }
+        public string BaseInfo()
+        {
+            return $"{base.ToString()}, Военнослужащий.\nМесто службы: {Place}" +
+                $"Период службы: c {StartDate.ToString("d")} " +
+                $"по  {EndDate.ToString("d")}";
+        }
         public override string ToString()
         {
-            return $"Военослужащий.\nМесто службы: {Place}\n" +
-                $"Период служыбы: c {StartDate.ToString("d")} " +
-                $"по  {EndDate.ToString("d")}";
+            return $"{base.ToString()}";
         }
     }
 } 

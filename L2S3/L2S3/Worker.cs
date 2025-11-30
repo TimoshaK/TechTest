@@ -3,66 +3,44 @@ using System;
 namespace L2S3
 {
     public sealed class Worker:Person{
-        public int WorkDayTime 
-        {
-            get {return WorkDayTime; }
-            set {
-                if ((value > 0) && (value  < 16)) 
-                {
-                    WorkDayTime = value;
-                }
-                else
-                {
-                    WorkDayTime = 0;
-                }
-            }
-        }
-        public DateTime StartWorkDay
-        {
-            get { return StartWorkDay; }
-            set
-            {
-                if (StartWorkDay.ToString("HH mm") == null)
-                {
-                    StartWorkDay = new DateTime(1,1,1,9,0,0);
-                }
-                else
-                {
-                    StartWorkDay = value;
-                }
-            }
-        }
-
+        private int _workDayTime;
+        private int _salary;
+        public TimeSpan StartWorkDay { get; set; }
         public int Salary
         {
-            get {return Salary; }
+            get { return _salary; }
             set {
                 if (value > 0) 
                 {
-                    Salary = value;
+                    _salary = value;
                 }
-                else Salary = 0;
+                else _salary = 0;
             }
         }
         public Work Profession { get; set;}
         public Worker() : base()
         {
-            WorkDayTime = 0;
-            StartWorkDay = new DateTime();
+            Salary = 20000;
+            StartWorkDay = new TimeSpan(10, 0,0);
             Profession = Work.unemployed;
         }
-        public Worker(string Name, DateTime BirthDay, int Age, DateTime startWorkDay, int workDayTime, Work profession = Work.unemployed) : base(Name, Age, BirthDay)
+        public Worker(string Name, int Age,DateTime BirthDay, TimeSpan startWorkDay, 
+            int salary, Work profession = Work.unemployed, string pas = "1234") : base(Name, Age, BirthDay, pas)
         {
-            WorkDayTime = workDayTime;
+            Salary = salary;
             StartWorkDay = startWorkDay;
             Profession = profession;
         }
-        public override string ToString()
+        public string BaseInfo()
         {
             string str = Profession == Work.unemployed ? "Без работы." : StartWorkDay.ToString("HH mm");
-            return $"{base.ToString()}\n" +
-                $"Профессия: {Profession}, Рабочий день(часов): {WorkDayTime}\n"+
-                $"Начало рабочего дня: {str}";
+            return $"{base.ToString()}" +
+                $" Профессия: {Profession}, Зарплата: {Salary}" +
+                $" Начало рабочего дня: {str}";
+        }
+        public override string ToString()
+        {
+            return $"{base.ToString()}";
         }
     }
 }

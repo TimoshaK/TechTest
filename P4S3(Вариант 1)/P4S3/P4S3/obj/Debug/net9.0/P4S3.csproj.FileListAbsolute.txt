@@ -1,0 +1,127 @@
+G:\VsCodeProjects\P4S3\bin\Debug\net9.0\P4S3.exe
+G:\VsCodeProjects\P4S3\bin\Debug\net9.0\P4S3.deps.json
+G:\VsCodeProjects\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+G:\VsCodeProjects\P4S3\bin\Debug\net9.0\P4S3.dll
+G:\VsCodeProjects\P4S3\bin\Debug\net9.0\P4S3.pdb
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.dll
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.pdb
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+G:\VsCodeProjects\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+C:\Users\U-ber\Downloads\Telegram Desktop\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+G:\VsCodeProjects\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+G:\VsCodeProjects\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+G:\VsCodeProjects\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+G:\VsCodeProjects\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+G:\VsCodeProjects\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+G:\VsCodeProjects\P4S3\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+c:\Users\U-ber\Downloads\P4S3\P4S3\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+G:\Downloands\P4S3 (1)\P4S3\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+G:\Downloands\P4S3\bin\Debug\net9.0\P4S3.exe
+G:\Downloands\P4S3\bin\Debug\net9.0\P4S3.deps.json
+G:\Downloands\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+G:\Downloands\P4S3\bin\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3\bin\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+G:\Downloands\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\bin\Debug\net9.0\P4S3.exe
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\bin\Debug\net9.0\P4S3.deps.json
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\bin\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\bin\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+C:\Users\U-ber\Downloads\P4S3 (1)\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+G:\Downloands\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+G:\Downloands\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+G:\Downloands\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+G:\Downloands\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+G:\Downloands\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\bin\Debug\net9.0\P4S3.exe
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\bin\Debug\net9.0\P4S3.deps.json
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\bin\Debug\net9.0\P4S3.runtimeconfig.json
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\bin\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\bin\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfoInputs.cache
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.AssemblyInfo.cs
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.csproj.CoreCompileInputs.cache
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.sourcelink.json
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.dll
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\refint\P4S3.dll
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.pdb
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\P4S3.genruntimeconfig.cache
+C:\Users\U-ber\TechTest\P4S3(Вариант 1)\P4S3\P4S3\obj\Debug\net9.0\ref\P4S3.dll

@@ -1,18 +1,50 @@
-﻿using System;
+﻿
+using System;
+using System.Text;
+using static System.Console;
+using static L2S3.Interfaces;
 namespace L2S3
 {
     class Program
     {
+        static int Count_of_select_element = 0;
         private static List<Password> passwords = new List<Password>();
 
         static void Main()
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            
-            Console.WriteLine("🎯 СИСТЕМА УПРАВЛЕНИЯ ПАРОЛЯМИ\n");
-            
-            MainMenu();
+            Title = "TestProgramm";
+            OutputEncoding = Encoding.Unicode;
+            SetBufferSize(500, 500);
+            Clear();
+            Menu1();
+            return;
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         static void MainMenu()
         {
@@ -342,5 +374,57 @@ namespace L2S3
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");
             Console.ReadKey();
         }
+        /*static void UserData(string message, int mode, int x)
+        {
+            int num;
+            DateTime date;
+            string str = new string(' ', x);
+            while (true)
+            {
+                SetCursorPosition(0, Count_of_select_element + 2);
+                BackWall(); Write(message);
+                int curx = GetCursorPosition().Left, cury = GetCursorPosition().Top;
+                LowWall();
+                SetCursorPosition(curx, cury);
+                string input = ReadLine();
+                switch (mode)
+                {
+                    case 0:
+                        {
+                            if (int.TryParse(input, out num))
+                            {
+                                SetCursorPosition(0, Count_of_select_element + 2);
+                                WriteLine($"{str}\n{str}");
+                                IntData = num;
+                                SetCursorPosition(0, Count_of_select_element + 2);
+                                return;
+                            }
+                            break;
+                        }
+                    case 1:
+                        {
+                            if (DateTime.TryParse(input, out date))
+                            {
+                                SetCursorPosition(0, Count_of_select_element + 2);
+                                WriteLine($"{str}\n{str}");
+                                DateTimeData = date;
+                                SetCursorPosition(0, Count_of_select_element + 2);
+                                return;
+                            }
+                            break;
+                        }
+                    default: throw new ArgumentException("Режим userDate некорректен");
+                }
+                SetCursorPosition(0, Count_of_select_element + 2);
+                WriteLine(str);
+                SetCursorPosition(0, Count_of_select_element + 2);
+                BackWall(); WriteLine("Неверный ввод!");
+                Thread.Sleep(350);
+                SetCursorPosition(0, Count_of_select_element + 2);
+                Write(str);
+
+            }
+        }*/
+
     }
 }
