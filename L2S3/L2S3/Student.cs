@@ -52,8 +52,8 @@ namespace L2S3
         }
         public string BaseInfo()
         {
-            return $"{base.ToString()}\n" +
-                $"Курс: {Course}, Семестр: {Semester}\n" +
+            return $"{base.ToString()}" +
+                $"Курс: {Course}, Семестр: {Semester}" +
                 $"Направление: {Way}";
         }
         public override string ToString()

@@ -7,9 +7,7 @@ namespace L2S3
 {
     class Program
     {
-        static int Count_of_select_element = 0;
         private static List<Password> passwords = new List<Password>();
-
         static void Main()
         {
             Title = "TestProgramm";
@@ -18,34 +16,8 @@ namespace L2S3
             Clear();
             Menu1();
             return;
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // методы для тестирования парролей, но не используются в интерфейсе.
         static void MainMenu()
         {
             while (true)
@@ -374,57 +346,6 @@ namespace L2S3
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");
             Console.ReadKey();
         }
-        /*static void UserData(string message, int mode, int x)
-        {
-            int num;
-            DateTime date;
-            string str = new string(' ', x);
-            while (true)
-            {
-                SetCursorPosition(0, Count_of_select_element + 2);
-                BackWall(); Write(message);
-                int curx = GetCursorPosition().Left, cury = GetCursorPosition().Top;
-                LowWall();
-                SetCursorPosition(curx, cury);
-                string input = ReadLine();
-                switch (mode)
-                {
-                    case 0:
-                        {
-                            if (int.TryParse(input, out num))
-                            {
-                                SetCursorPosition(0, Count_of_select_element + 2);
-                                WriteLine($"{str}\n{str}");
-                                IntData = num;
-                                SetCursorPosition(0, Count_of_select_element + 2);
-                                return;
-                            }
-                            break;
-                        }
-                    case 1:
-                        {
-                            if (DateTime.TryParse(input, out date))
-                            {
-                                SetCursorPosition(0, Count_of_select_element + 2);
-                                WriteLine($"{str}\n{str}");
-                                DateTimeData = date;
-                                SetCursorPosition(0, Count_of_select_element + 2);
-                                return;
-                            }
-                            break;
-                        }
-                    default: throw new ArgumentException("Режим userDate некорректен");
-                }
-                SetCursorPosition(0, Count_of_select_element + 2);
-                WriteLine(str);
-                SetCursorPosition(0, Count_of_select_element + 2);
-                BackWall(); WriteLine("Неверный ввод!");
-                Thread.Sleep(350);
-                SetCursorPosition(0, Count_of_select_element + 2);
-                Write(str);
-
-            }
-        }*/
 
     }
 }

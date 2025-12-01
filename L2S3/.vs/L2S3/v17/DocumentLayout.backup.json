@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\worker.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\worker.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +23,8 @@
       "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\worker.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\worker.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\officer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|c:\\users\\u-ber\\techtest\\l2s3\\l2s3\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EFEEC13-53CD-4010-AF7B-CA4C6828B256}|L2S3\\L2S3.csproj|solutionrelative:l2s3\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,27 +52,27 @@
               "RelativeDocumentMoniker": "L2S3\\Interface.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Interface.cs",
               "RelativeToolTip": "L2S3\\Interface.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAkwIgAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAKICAAAAAAAAAAAAALYCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T18:54:00.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Program.cs",
               "RelativeDocumentMoniker": "L2S3\\Program.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Program.cs",
               "RelativeToolTip": "L2S3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwBAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T15:02:43.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Enums.cs",
               "RelativeDocumentMoniker": "L2S3\\Enums.cs",
@@ -85,65 +85,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Password.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Password.cs",
               "RelativeDocumentMoniker": "L2S3\\Password.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Password.cs",
               "RelativeToolTip": "L2S3\\Password.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAswCsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T14:57:44.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Officer.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Officer.cs",
               "RelativeDocumentMoniker": "L2S3\\Officer.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Officer.cs",
               "RelativeToolTip": "L2S3\\Officer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T15:02:53.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Person.cs",
               "RelativeDocumentMoniker": "L2S3\\Person.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Person.cs",
               "RelativeToolTip": "L2S3\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T15:02:50.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Student.cs",
               "RelativeDocumentMoniker": "L2S3\\Student.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Student.cs",
               "RelativeToolTip": "L2S3\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T15:02:42.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Worker.cs",
               "RelativeDocumentMoniker": "L2S3\\Worker.cs",
               "ToolTip": "C:\\Users\\U-ber\\TechTest\\L2S3\\L2S3\\Worker.cs",
               "RelativeToolTip": "L2S3\\Worker.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T15:01:10.95Z",
               "EditorCaption": ""

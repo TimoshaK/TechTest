@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace L2S3{
-    public class Password {
+    internal class Password {
         private string _value;
         public char this[int x]
         {
@@ -90,12 +90,12 @@ namespace L2S3{
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"🔐 Пароль: {_value}");
-            Console.WriteLine($"📏 Длина: {Length} символов");
-            Console.WriteLine($"🛡️  Стойкий: {(IsStrong() ? "✅ Да" : "❌ Нет")}");
-            Console.WriteLine($"📋 Допустимая длина: {(IsValidLength() ? "✅ Да" : "❌ Нет")}");
-            Console.WriteLine($"🔢 Содержит цифры: {(ContainsDigits() ? "✅ Да" : "❌ Нет")}");
-            Console.WriteLine($"✨ Содержит спецсимволы: {(ContainsSpecialCharacters() ? "✅ Да" : "❌ Нет")}");
+            Console.WriteLine($"Пароль: {_value}");
+            Console.WriteLine($"Длина: {Length} символов");
+            Console.WriteLine($"Стойкий: {(IsStrong() ? "✅ Да" : "❌ Нет")}");
+            Console.WriteLine($"Допустимая длина: {(IsValidLength() ? "✅ Да" : "❌ Нет")}");
+            Console.WriteLine($"Содержит цифры: {(ContainsDigits() ? "✅ Да" : "❌ Нет")}");
+            Console.WriteLine($"Содержит спецсимволы: {(ContainsSpecialCharacters() ? "✅ Да" : "❌ Нет")}");
             Console.WriteLine(new string('-', 40));
         }
 

@@ -38,7 +38,7 @@ namespace L2S3
         }
         public string BaseInfo()
         {
-            return $"{base.ToString()}, Военнослужащий.\nМесто службы: {Place}" +
+            return $"{base.ToString()}, Военнослужащий. Место службы: {Place}" +
                 $"Период службы: c {StartDate.ToString("d")} " +
                 $"по  {EndDate.ToString("d")}";
         }

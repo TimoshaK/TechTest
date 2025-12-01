@@ -2,7 +2,8 @@ using System;
 
 namespace L2S3
 {
-    public class Person{
+    
+    public abstract class Person{
         private int _age;
         private Password _password = new Password("1234");
         public string Name { get; set; }
@@ -42,7 +43,7 @@ namespace L2S3
             BirthDay = birthDay;
             password = new Password(pas);
         }
-        public bool ComparePasswords(Password password)
+        internal bool ComparePasswords(Password password)
         {
             return (this._password).Equals(password);
         }
@@ -52,6 +53,14 @@ namespace L2S3
             if (ReferenceEquals(this, obj)) return true;
             if (obj is not Person person) return false;
             return this.Name == person.Name && this.Age == person.Age;
+        }
+        public void Update_Pasword(string StringData)
+        {
+            password = new Password(StringData);
+        }
+        internal string ShowPassword()
+        {
+            return _password.Value;
         }
         public override int GetHashCode(){
             return this.GetHashCode();

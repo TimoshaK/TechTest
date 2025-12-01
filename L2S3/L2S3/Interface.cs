@@ -14,7 +14,6 @@ namespace L2S3
         private static TimeSpan TimeSpanData;
         public static ConsoleColor Fcolor = ConsoleColor.Black, Bcolor = ConsoleColor.Blue;
         public static List<Person> peoples = new List<Person>{
-            new Person("Рамзан", 22,  new DateTime(2004, 11, 25)),
             new Officer("Ахмед", 26 ,new DateTime(2001, 11, 25),new DateTime(2004, 11, 25),new DateTime(2004, 11, 25), Placement.Russia, "A2"),
             new Student("Егор", 18 ,new DateTime(2001, 11, 25),2 ,4, Specialization.law, "A1"),
             new Worker("Давид", 19 ,new DateTime(2001, 11, 25),new TimeSpan(10,0, 0),8, Work.Programmer, "A1"),
@@ -52,13 +51,9 @@ namespace L2S3
                                 if(num - 1 >= 0 && peoples.Count() > num - 1&&
                                     PasswordMenu(x, peoples[num - 1]))
                                 {
-                                    Menu2(x, peoples[num]);
+                                    Menu2(x, peoples[num-1]);
                                 }
-                                else
-                                {
-                                    
-                                }
-                                    break;
+                                break;
                             case ConsoleKey.Q:
                                 return;
                             case ConsoleKey.DownArrow:
@@ -108,13 +103,15 @@ namespace L2S3
                         var key = ReadKey(true).Key;
                         switch (key)
                         {
-                            case ConsoleKey.Enter:
-                                break;
                             case ConsoleKey.Q:
+                                Menu1();
                                 return;
-                            case ConsoleKey.N:
+                            case ConsoleKey.C:
+                                ChangePassword(person, x);
+                                Update_interface2(x, person, list2);
                                 break;
-                            case ConsoleKey.D:
+                            case ConsoleKey.S:
+                                PasswordShow(person, x);
                                 break;
                         }
                     }
@@ -242,6 +239,10 @@ namespace L2S3
             }
             BackWall(); WriteLine(line);
             SeparateWall();
+            if(people is Officer officer) Separator(officer.BaseInfo(), x);
+            else if (people is Student student) Separator(student.BaseInfo(), x);
+            else if (people is Worker worker) Separator(worker.BaseInfo(), x);
+            else Separator(people.ToString(), x);
             Write("╚");
             for (int i = 0; i < x - 2; i++)
             {
@@ -284,6 +285,54 @@ namespace L2S3
             }
             
         }
+        static void ChangePassword(Person person, int x)
+        {
+            string pasw1, pasw2, str = new string(' ', x) ;
+            Password password1 = new Password(), password2;
+            if (PasswordMenu(x, person))
+            {
+                UserData(" Придумайте новый пароль: ", 2, x, lasttop + 2);
+                password2 = new Password(StringData);
+                SetCursorPosition(0, lasttop + 3);
+                Write(str);
+                SetCursorPosition(0, lasttop + 3); BackWall();
+                if (password1.Equals(password2))
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    Write("Пароли совпадают!");
+                    ForegroundColor = Fcolor;
+                    LowWall();
+                    Thread.Sleep(350);
+                    for (int i = 0; i < 15; i++)
+                    {
+                        SetCursorPosition(0, lasttop + 1 + i);
+                        Write(str);
+                    }
+                    SetCursorPosition(0, lasttop);
+                   
+                }
+                else
+                {
+                    BackgroundColor = ConsoleColor.Black;
+                    ForegroundColor = ConsoleColor.Green;
+                    Write("Пароль обновлен!");
+                    ForegroundColor = Fcolor;
+                    BackgroundColor = ConsoleColor.Blue;
+                    LowWall();
+                    Thread.Sleep(350);
+                    (person).Update_Pasword(StringData);
+                        
+                }
+            }
+                
+        }
+        private static void PasswordShow(Person person, int x)
+        {
+            SetCursorPosition(0, lasttop);
+            SeparateWall(); BackWall();
+            Write(person.ShowPassword());
+            LowWall();
+        }
         static object AddMenu(int x)
         {
             SetCursorPosition(0, lasttop);
@@ -299,7 +348,7 @@ namespace L2S3
                 BackgroundColor = Bcolor; ForegroundColor = Fcolor;
             };
             string[] items = new string[] {
-                    "Student", "Officer", "Worker", "None"
+                    "Student", "Officer", "Worker"
                 };
             Action<int> sellist = (num) =>
             {
@@ -400,7 +449,6 @@ namespace L2S3
                 default: break;
                 
             }
-            if (selPerson == 4) { lasttop -= 6; }
             string pasw1,pasw2;
             Password password1 = new Password(), password2;
             while (true)
@@ -467,12 +515,7 @@ namespace L2S3
                     {
                         return new Worker(Name, Age, BirthDay,StartTime,Salary, Profession, password1.Value);
                     }
-                case 4:
-                    {
-                        lasttop += 6;
-                        return new Person(Name, Age, BirthDay,password1.Value);
-                    }
-                default: return new Person();
+                default: return null;
             }
 
         }
@@ -627,7 +670,7 @@ namespace L2S3
         {
             Write("║"); SetCursorPosition(WindowWidth-1, GetCursorPosition().Top); Write("║"); SetCursorPosition(1,GetCursorPosition().Top);
         }
-        public static void Separator(string sentence,int x, bool q)
+        public static void Separator(string sentence,int x, bool q = false)
         {
             BackWall(); if (q) { BackgroundColor = Fcolor; ForegroundColor = Bcolor; }
             int m = 0, j = 0, Length = sentence.ToString().Length;
@@ -644,10 +687,9 @@ namespace L2S3
                 Write(sentence.ToString()[j]);
                 j++; m++; Length--;
             }
-            string str = new string(' ', x - 2 - m);
+            string str = new string(' ', x - 3 - m);
             WriteLine($"{str}");
             BackgroundColor = Bcolor; ForegroundColor = Fcolor;
         }
-
     }
 }

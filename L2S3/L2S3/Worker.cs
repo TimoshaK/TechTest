@@ -33,7 +33,7 @@ namespace L2S3
         }
         public string BaseInfo()
         {
-            string str = Profession == Work.unemployed ? "Без работы." : StartWorkDay.ToString("HH mm");
+            string str = Profession == Work.unemployed ? "Без работы." : (StartWorkDay.ToString(@"hh\.mm")).ToString();
             return $"{base.ToString()}" +
                 $" Профессия: {Profession}, Зарплата: {Salary}" +
                 $" Начало рабочего дня: {str}";
