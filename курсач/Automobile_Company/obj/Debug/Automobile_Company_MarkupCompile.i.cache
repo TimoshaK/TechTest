@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\VisualStudio\repos\Automobile_Company\App.xaml
-21432439308
+5-1488399298
 
-3571794458
+461421268056
 23-430005831
-Dialogs\CreateOrderDialog.xaml;MainWindow.xaml;
+Dialogs\CreateDriverDialog.xaml;Dialogs\CreateOrderDialog.xaml;Dialogs\CreateTripDialog.xaml;Dialogs\CreateVehicleDialog.xaml;MainWindow.xaml;
 
-False
+True
 

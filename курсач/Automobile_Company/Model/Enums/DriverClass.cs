@@ -9,9 +9,9 @@ namespace Automobile_Company.Model.Enums
     // Классность водителя
     public enum DriverClass
     {
-        Third,          // Третий класс
-        Second,         // Второй класс
-        First,          // Первый класс
+        III,          // Третий класс
+        II,         // Второй класс
+        I,          // Первый класс
         Master          // Мастер
     }
 }

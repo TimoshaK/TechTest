@@ -149,18 +149,25 @@ namespace Automobile_Company.Model
         {
             get
             {
-                return 12;
-                /*return Status switch
+                switch (Status)
                 {
-                    TripStatus.Created => 0,
-                    TripStatus.Loading => 25,
-                    TripStatus.OnRoute => 50,
-                    TripStatus.Unloading => 75,
-                    TripStatus.Completed => 100,
-                    TripStatus.Cancelled => 0,
-                    _ => 0
-                };*/
+                    case TripStatus.Created:
+                        return 0;
+                    case TripStatus.Loading:
+                        return 25;
+                    case TripStatus.OnRoute:
+                        return 50;
+                    case TripStatus.Unloading:
+                        return 75;
+                    case TripStatus.Completed:
+                        return 100;
+                    case TripStatus.Cancelled:
+                        return 0;
+                    default:
+                        return 0;
+                }
             }
+            set { Progress = value; }
         }
 
         public bool CanCancel => Status == TripStatus.Created || Status == TripStatus.Loading;

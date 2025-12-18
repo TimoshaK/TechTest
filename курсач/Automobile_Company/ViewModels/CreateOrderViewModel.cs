@@ -14,10 +14,35 @@ namespace Automobile_Company.ViewModels
 {
     public class CreateOrderViewModel : INotifyPropertyChanged
     {
-        private readonly DataService _dataService;
-        
-        private Client _selectedSender;
-        private Client _selectedReceiver;
+        // Добавляем флаги для типа клиентов
+        private ClientType _senderType = ClientType.Individual;
+        private ClientType _receiverType = ClientType.Individual;
+ 
+        // Поля для физического лица (отправитель)
+        private string _senderFullName;
+        private string _senderPassportSeries;
+        private string _senderPassportNumber;
+        private string _senderPhone;
+
+        // Поля для юридического лица (отправитель)
+        private string _senderCompanyName;
+        private string _senderDirectorName;
+        private string _senderLegalAddress;
+        private string _senderInn;
+
+        // Поля для физического лица (получатель)
+        private string _receiverFullName;
+        private string _receiverPassportSeries;
+        private string _receiverPassportNumber;
+        private string _receiverPhone;
+
+        // Поля для юридического лица (получатель)
+        private string _receiverCompanyName;
+        private string _receiverDirectorName;
+        private string _receiverLegalAddress;
+        private string _receiverInn;
+
+        // Остальные поля остаются
         private string _loadingAddress;
         private string _unloadingAddress;
         private double _routeLength;
@@ -27,7 +52,6 @@ namespace Automobile_Company.ViewModels
         private ObservableCollection<CargoItem> _cargoItems;
         private CargoItem _selectedCargoItem;
 
-        public ObservableCollection<Client> Clients { get; }
         public ObservableCollection<CargoItem> CargoItems
         {
             get => _cargoItems;
@@ -40,94 +64,178 @@ namespace Automobile_Company.ViewModels
             }
         }
 
-        public Client SelectedSender
+        // Свойства для типа клиентов
+        public ClientType SenderType
         {
-            get => _selectedSender;
+            get => _senderType;
             set
             {
-                _selectedSender = value;
+                _senderType = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(IsSenderIndividual));
+                OnPropertyChanged(nameof(IsSenderLegal));
             }
         }
 
-        public Client SelectedReceiver
+        public ClientType ReceiverType
         {
-            get => _selectedReceiver;
+            get => _receiverType;
             set
             {
-                _selectedReceiver = value;
+                _receiverType = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(IsReceiverIndividual));
+                OnPropertyChanged(nameof(IsReceiverLegal));
             }
         }
 
+        // Изменяем на обычные get-only свойства (нельзя использовать для привязки IsChecked)
+        public bool IsSenderIndividual => SenderType == ClientType.Individual;
+        public bool IsSenderLegal => SenderType == ClientType.Legal;
+        public bool IsReceiverIndividual => ReceiverType == ClientType.Individual;
+        public bool IsReceiverLegal => ReceiverType == ClientType.Legal;
+
+        // Свойства для физического лица (отправитель)
+        public string SenderFullName
+        {
+            get => _senderFullName;
+            set { _senderFullName = value; OnPropertyChanged(); }
+        }
+
+        public string SenderPassportSeries
+        {
+            get => _senderPassportSeries;
+            set { _senderPassportSeries = value; OnPropertyChanged(); }
+        }
+
+        public string SenderPassportNumber
+        {
+            get => _senderPassportNumber;
+            set { _senderPassportNumber = value; OnPropertyChanged(); }
+        }
+
+        public string SenderPhone
+        {
+            get => _senderPhone;
+            set { _senderPhone = value; OnPropertyChanged(); }
+        }
+
+        // Свойства для юридического лица (отправитель)
+        public string SenderCompanyName
+        {
+            get => _senderCompanyName;
+            set { _senderCompanyName = value; OnPropertyChanged(); }
+        }
+
+        public string SenderDirectorName
+        {
+            get => _senderDirectorName;
+            set { _senderDirectorName = value; OnPropertyChanged(); }
+        }
+
+        public string SenderLegalAddress
+        {
+            get => _senderLegalAddress;
+            set { _senderLegalAddress = value; OnPropertyChanged(); }
+        }
+
+        public string SenderInn
+        {
+            get => _senderInn;
+            set { _senderInn = value; OnPropertyChanged(); }
+        }
+
+        // Свойства для физического лица (получатель)
+        public string ReceiverFullName
+        {
+            get => _receiverFullName;
+            set { _receiverFullName = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverPassportSeries
+        {
+            get => _receiverPassportSeries;
+            set { _receiverPassportSeries = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverPassportNumber
+        {
+            get => _receiverPassportNumber;
+            set { _receiverPassportNumber = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverPhone
+        {
+            get => _receiverPhone;
+            set { _receiverPhone = value; OnPropertyChanged(); }
+        }
+
+        // Свойства для юридического лица (получатель)
+        public string ReceiverCompanyName
+        {
+            get => _receiverCompanyName;
+            set { _receiverCompanyName = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverDirectorName
+        {
+            get => _receiverDirectorName;
+            set { _receiverDirectorName = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverLegalAddress
+        {
+            get => _receiverLegalAddress;
+            set { _receiverLegalAddress = value; OnPropertyChanged(); }
+        }
+
+        public string ReceiverInn
+        {
+            get => _receiverInn;
+            set { _receiverInn = value; OnPropertyChanged(); }
+        }
+
+        // Остальные свойства остаются без изменений
         public string LoadingAddress
         {
             get => _loadingAddress;
-            set
-            {
-                _loadingAddress = value;
-                OnPropertyChanged();
-            }
+            set { _loadingAddress = value; OnPropertyChanged(); }
         }
 
         public string UnloadingAddress
         {
             get => _unloadingAddress;
-            set
-            {
-                _unloadingAddress = value;
-                OnPropertyChanged();
-            }
+            set { _unloadingAddress = value; OnPropertyChanged(); }
         }
 
         public double RouteLength
         {
             get => _routeLength;
-            set
-            {
-                _routeLength = value;
-                OnPropertyChanged();
-            }
+            set { _routeLength = value; OnPropertyChanged(); }
         }
 
         public decimal OrderCost
         {
             get => _orderCost;
-            set
-            {
-                _orderCost = value;
-                OnPropertyChanged();
-            }
+            set { _orderCost = value; OnPropertyChanged(); }
         }
 
         public PaymentMethod PaymentMethod
         {
             get => _paymentMethod;
-            set
-            {
-                _paymentMethod = value;
-                OnPropertyChanged();
-            }
+            set { _paymentMethod = value; OnPropertyChanged(); }
         }
 
         public string Notes
         {
             get => _notes;
-            set
-            {
-                _notes = value;
-                OnPropertyChanged();
-            }
+            set { _notes = value; OnPropertyChanged(); }
         }
 
         public CargoItem SelectedCargoItem
         {
             get => _selectedCargoItem;
-            set
-            {
-                _selectedCargoItem = value;
-                OnPropertyChanged();
-            }
+            set { _selectedCargoItem = value; OnPropertyChanged(); }
         }
 
         public double TotalWeight => CargoItems?.Sum(item => item.TotalWeight) ?? 0;
@@ -144,8 +252,6 @@ namespace Automobile_Company.ViewModels
 
         public CreateOrderViewModel()
         {
-            _dataService = DataService.Instance;
-            Clients = _dataService.Clients;
             CargoItems = new ObservableCollection<CargoItem>();
             PaymentMethod = PaymentMethod.Cash;
 
@@ -190,11 +296,17 @@ namespace Automobile_Company.ViewModels
             try
             {
                 ValidateInput();
-                
+
+                // Создаем клиента-отправителя
+                Client sender = CreateSenderClient();
+
+                // Создаем клиента-получателя
+                Client receiver = CreateReceiverClient();
+
                 var order = new Order
                 {
-                    Sender = SelectedSender,
-                    Receiver = SelectedReceiver,
+                    Sender = sender,
+                    Receiver = receiver,
                     LoadingAddress = LoadingAddress,
                     UnloadingAddress = UnloadingAddress,
                     RouteLength = RouteLength,
@@ -210,7 +322,7 @@ namespace Automobile_Company.ViewModels
                 }
 
                 CreatedOrder = order;
-                
+
                 if (parameter is Window window)
                 {
                     window.DialogResult = true;
@@ -219,33 +331,133 @@ namespace Automobile_Company.ViewModels
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при создании заказа: {ex.Message}", 
+                MessageBox.Show($"Ошибка при создании заказа: {ex.Message}",
                     "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private Client CreateSenderClient()
+        {
+            if (SenderType == ClientType.Individual)
+            {
+                return new IndividualClient
+                {
+                    FullName = SenderFullName,
+                    PassportSeries = SenderPassportSeries,
+                    PassportNumber = SenderPassportNumber,
+                    Phone = SenderPhone
+                };
+            }
+            else
+            {
+                return new LegalClient
+                {
+                    CompanyName = SenderCompanyName,
+                    DirectorName = SenderDirectorName,
+                    LegalAddress = SenderLegalAddress,
+                    Inn = SenderInn,
+                    Phone = SenderPhone
+                };
+            }
+        }
+
+        private Client CreateReceiverClient()
+        {
+            if (ReceiverType == ClientType.Individual)
+            {
+                return new IndividualClient
+                {
+                    FullName = ReceiverFullName,
+                    PassportSeries = ReceiverPassportSeries,
+                    PassportNumber = ReceiverPassportNumber,
+                    Phone = ReceiverPhone
+                };
+            }
+            else
+            {
+                return new LegalClient
+                {
+                    CompanyName = ReceiverCompanyName,
+                    DirectorName = ReceiverDirectorName,
+                    LegalAddress = ReceiverLegalAddress,
+                    Inn = ReceiverInn,
+                    Phone = ReceiverPhone
+                };
             }
         }
 
         private void ValidateInput()
         {
-            if (SelectedSender == null)
-                throw new ArgumentException("Не выбран отправитель");
-            
-            if (SelectedReceiver == null)
-                throw new ArgumentException("Не выбран получатель");
-            
+            // Валидация отправителя
+            if (SenderType == ClientType.Individual)
+            {
+                if (string.IsNullOrWhiteSpace(SenderFullName))
+                    throw new ArgumentException("Не указано ФИО отправителя");
+                if (string.IsNullOrWhiteSpace(SenderPhone))
+                    throw new ArgumentException("Не указан телефон отправителя");
+            }
+            else
+            {
+                if (string.IsNullOrWhiteSpace(SenderCompanyName))
+                    throw new ArgumentException("Не указано название компании отправителя");
+                if (string.IsNullOrWhiteSpace(SenderPhone))
+                    throw new ArgumentException("Не указан телефон отправителя");
+            }
+
+            // Валидация получателя
+            if (ReceiverType == ClientType.Individual)
+            {
+                if (string.IsNullOrWhiteSpace(ReceiverFullName))
+                    throw new ArgumentException("Не указано ФИО получателя");
+                if (string.IsNullOrWhiteSpace(ReceiverPhone))
+                    throw new ArgumentException("Не указан телефон получателя");
+            }
+            else
+            {
+                if (string.IsNullOrWhiteSpace(ReceiverCompanyName))
+                    throw new ArgumentException("Не указано название компании получателя");
+                if (string.IsNullOrWhiteSpace(ReceiverPhone))
+                    throw new ArgumentException("Не указан телефон получателя");
+            }
+
+            // Проверка, что отправитель и получатель не одинаковые
+            if (AreClientsEqual())
+                throw new ArgumentException("Отправитель и получатель не могут быть одинаковыми");
+
             if (string.IsNullOrWhiteSpace(LoadingAddress))
                 throw new ArgumentException("Не указан адрес погрузки");
-            
+
             if (string.IsNullOrWhiteSpace(UnloadingAddress))
                 throw new ArgumentException("Не указан адрес разгрузки");
-            
+
             if (RouteLength <= 0)
                 throw new ArgumentException("Длина маршрута должна быть больше 0");
-            
+
             if (OrderCost <= 0)
                 throw new ArgumentException("Стоимость заказа должна быть больше 0");
-            
+
             if (CargoItems.Count == 0)
                 throw new ArgumentException("Добавьте хотя бы один груз");
+        }
+
+        private bool AreClientsEqual()
+        {
+            if (SenderType != ReceiverType)
+                return false;
+
+            if (SenderType == ClientType.Individual)
+            {
+                return SenderFullName == ReceiverFullName &&
+                       SenderPhone == ReceiverPhone &&
+                       SenderPassportSeries == ReceiverPassportSeries &&
+                       SenderPassportNumber == ReceiverPassportNumber;
+            }
+            else
+            {
+                return SenderCompanyName == ReceiverCompanyName &&
+                       SenderPhone == ReceiverPhone &&
+                       SenderInn == ReceiverInn;
+            }
         }
 
         private void Cancel(object parameter)

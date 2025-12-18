@@ -178,7 +178,7 @@ namespace Automobile_Company.Model
             Id = Guid.NewGuid();
             Status = DriverStatus.Available;
             Category = DriverCategory.C;
-            SkillClass = DriverClass.Third;
+            SkillClass = DriverClass.III;
         }
 
         protected virtual void OnPropertyChanged(string propertyName)

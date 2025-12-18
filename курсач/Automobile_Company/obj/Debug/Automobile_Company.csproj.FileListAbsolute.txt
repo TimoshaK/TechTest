@@ -36,7 +36,6 @@ G:\VisualStudio\repos\Automobile_Company\obj\Debug\Automobile_Company.exe
 G:\VisualStudio\repos\Automobile_Company\obj\Debug\Automobile_Company.pdb
 G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateOrderDialog.g.cs
 G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateOrderDialog.baml
-G:\VisualStudio\repos\Automobile_Company\obj\Debug\Automobile_Company.exe.config
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\bin\Debug\Automobile_Company.exe.config
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\bin\Debug\Automobile_Company.exe
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\bin\Debug\Automobile_Company.pdb
@@ -76,3 +75,10 @@ C:\Users\U-ber\TechTest\курсач\Automobile_Company\obj\Debug\Automobile_Com
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\obj\Debug\Automobi.16E321CA.Up2Date
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\obj\Debug\Automobile_Company.exe
 C:\Users\U-ber\TechTest\курсач\Automobile_Company\obj\Debug\Automobile_Company.pdb
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateDriverDialog.g.cs
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateDriverDialog.baml
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateVehicleDialog.g.cs
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateVehicleDialog.baml
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Automobile_Company.exe.config
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateTripDialog.g.cs
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\Dialogs\CreateTripDialog.baml

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using Automobile_Company.Model.Enums;
-
+using System.Linq;
 namespace Automobile_Company.Model
 {
     public class Order : INotifyPropertyChanged
@@ -192,7 +192,7 @@ namespace Automobile_Company.Model
             {
                 if (CargoItems == null || CargoItems.Count == 0)
                     return 0;
-                return 40;//CargoItems.Sum(item => item.TotalWeight);
+                return CargoItems.Sum(item => item.TotalWeight);
             }
         }
 
@@ -200,18 +200,25 @@ namespace Automobile_Company.Model
         {
             get
             {
-                return 10;
-                /*return Status switch
+                switch (Status)
                 {
-                    OrderStatus.New => 0,
-                    OrderStatus.WaitingPayment => 20,
-                    OrderStatus.Paid => 40,
-                    OrderStatus.InProgress => 60,
-                    OrderStatus.Completed => 100,
-                    OrderStatus.Cancelled => 0,
-                    _ => 0
-                };*/
+                    case OrderStatus.New:
+                        return 0;
+                    case OrderStatus.WaitingPayment:
+                        return 0;
+                    case OrderStatus.Paid:
+                        return 5;
+                    case OrderStatus.InProgress:
+                        return 50;
+                    case OrderStatus.Completed:
+                        return 100;
+                    case OrderStatus.Cancelled:
+                        return 0;
+                    default:
+                        return 0;
+                }
             }
+            set { Progress = value; }// добавил для работы, была ошибка биндинга
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

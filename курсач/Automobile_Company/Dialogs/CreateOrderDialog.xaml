@@ -20,6 +20,8 @@
     <Window.Resources>
         <converters:EnumToStringConverter x:Key="EnumToStringConverter"/>
         <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="0,5,0,2"/>
             <Setter Property="FontWeight" Value="Bold"/>
@@ -80,6 +82,7 @@
         <!-- Основное содержимое -->
         <TabControl Grid.Row="1">
             <!-- Информация о клиентах -->
+            <!-- Вкладка "Клиенты" -->
             <TabItem Header="Клиенты">
                 <ScrollViewer>
                     <Grid Margin="10">
@@ -93,61 +96,124 @@
 
                         <!-- Отправитель -->
                         <StackPanel Grid.Row="0">
-                            <TextBlock Text="Отправитель"/>
-                            <ComboBox ItemsSource="{Binding Clients}"
+                            <TextBlock Text="Отправитель" Style="{StaticResource SectionHeaderStyle}"/>
 
-                                      SelectedItem="{Binding SelectedSender}">
-                                <ComboBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel>
-                                            <TextBlock Text="{Binding GetClientInfo}" FontWeight="Bold"/>
-                                            <TextBlock Text="{Binding Phone}" FontSize="11" Foreground="#666"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ComboBox.ItemTemplate>
-                            </ComboBox>
+                            <!-- Выбор типа отправителя - ПРАВИЛЬНЫЙ СПОСОБ -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <RadioButton Content="Физическое лицо" 
+                                 IsChecked="{Binding SenderType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Individual}}"
+                                 GroupName="SenderType"
+                                 Margin="0,0,20,0"/>
+                                <RadioButton Content="Юридическое лицо" 
+                                 IsChecked="{Binding SenderType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Legal}}"
+                                 GroupName="SenderType"/>
+                            </StackPanel>
 
-                            <!-- Информация об отправителе -->
-                            <Border BorderBrush="#E0E0E0" BorderThickness="1" 
-                                    CornerRadius="5" Padding="10" Margin="0,10,0,0"
-                                    Visibility="{Binding SelectedSender, Converter={StaticResource NullToBooleanConverter}, ConverterParameter=inverse}">
-                                <StackPanel>
-                                    <TextBlock Text="Информация об отправителе:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding SelectedSender.GetClientInfo}" 
-                                               Margin="0,5,0,0"/>
-                                    <TextBlock Text="{Binding SelectedSender.Phone}" 
-                                               Margin="0,2,0,0" Foreground="#666"/>
-                                </StackPanel>
-                            </Border>
+                            <!-- Поля для физического лица -->
+                            <StackPanel Visibility="{Binding IsSenderIndividual, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="ФИО*"/>
+                                <TextBox Text="{Binding SenderFullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding SenderPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="Серия паспорта"/>
+                                        <TextBox Text="{Binding SenderPassportSeries, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Номер паспорта"/>
+                                        <TextBox Text="{Binding SenderPassportNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+
+                            <!-- Поля для юридического лица -->
+                            <StackPanel Visibility="{Binding IsSenderLegal, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="Название компании*"/>
+                                <TextBox Text="{Binding SenderCompanyName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding SenderPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ФИО директора"/>
+                                <TextBox Text="{Binding SenderDirectorName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Юридический адрес"/>
+                                <TextBox Text="{Binding SenderLegalAddress, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ИНН"/>
+                                <TextBox Text="{Binding SenderInn, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
                         </StackPanel>
 
                         <!-- Получатель -->
                         <StackPanel Grid.Row="3" Margin="0,20,0,0">
-                            <TextBlock Text="Получатель"/>
-                            <ComboBox ItemsSource="{Binding Clients}"
-                                      SelectedItem="{Binding Receiver}">
-                                <ComboBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel>
-                                            <TextBlock Text="{Binding GetClientInfo}" FontWeight="Bold"/>
-                                            <TextBlock Text="{Binding Phone}" FontSize="11" Foreground="#666"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ComboBox.ItemTemplate>
-                            </ComboBox>
+                            <TextBlock Text="Получатель" Style="{StaticResource SectionHeaderStyle}"/>
 
-                            <!-- Информация о получателе -->
-                            <Border BorderBrush="#E0E0E0" BorderThickness="1" 
-                                    CornerRadius="5" Padding="10" Margin="0,10,0,0"
-                                    Visibility="{Binding SelectedReceiver, Converter={StaticResource NullToBooleanConverter}, ConverterParameter=inverse}">
-                                <StackPanel>
-                                    <TextBlock Text="Информация о получателе:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding SelectedReceiver.GetClientInfo}" 
-                                               Margin="0,5,0,0"/>
-                                    <TextBlock Text="{Binding SelectedReceiver.Phone}" 
-                                               Margin="0,2,0,0" Foreground="#666"/>
-                                </StackPanel>
-                            </Border>
+                            <!-- Выбор типа получателя - ПРАВИЛЬНЫЙ СПОСОБ -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <RadioButton Content="Физическое лицо" 
+                                 IsChecked="{Binding ReceiverType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Individual}}"
+                                 GroupName="ReceiverType"
+                                 Margin="0,0,20,0"/>
+                                <RadioButton Content="Юридическое лицо" 
+                                 IsChecked="{Binding ReceiverType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Legal}}"
+                                 GroupName="ReceiverType"/>
+                            </StackPanel>
+
+                            <!-- Поля для физического лица -->
+                            <StackPanel Visibility="{Binding IsReceiverIndividual, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="ФИО*"/>
+                                <TextBox Text="{Binding ReceiverFullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding ReceiverPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="Серия паспорта"/>
+                                        <TextBox Text="{Binding ReceiverPassportSeries, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Номер паспорта"/>
+                                        <TextBox Text="{Binding ReceiverPassportNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+
+                            <!-- Поля для юридического лица -->
+                            <StackPanel Visibility="{Binding IsReceiverLegal, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="Название компании*"/>
+                                <TextBox Text="{Binding ReceiverCompanyName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding ReceiverPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ФИО директора"/>
+                                <TextBox Text="{Binding ReceiverDirectorName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Юридический адрес"/>
+                                <TextBox Text="{Binding ReceiverLegalAddress, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ИНН"/>
+                                <TextBox Text="{Binding ReceiverInn, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
                         </StackPanel>
                     </Grid>
                 </ScrollViewer>

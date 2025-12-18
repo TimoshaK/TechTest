@@ -85,17 +85,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <None Include="Model\Enums\None" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\ClientTypeConverter.cs" />
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
     <Compile Include="Converters\EnumToStringConverter.cs" />
     <Compile Include="Converters\NullToBooleanConverter.cs" />
+    <Compile Include="Converters\OrderToDisplayConverter.cs" />
+    <Compile Include="Converters\StringToImageConverter.cs" />
     <Compile Include="Converters\StringToVisibilityConverter.cs" />
     <Compile Include="Converters\PaymentStatusToColorConverter.cs" />
     <Compile Include="Converters\OrderStatusToColorConverter.cs" />
     <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="Converters\OrderStatusToBackgroundColorConverter.cs" />
+    <Compile Include="Dialogs\CreateDriverDialog.xaml.cs">
+      <DependentUpon>CreateDriverDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\CreateOrderDialog.xaml.cs">
       <DependentUpon>CreateOrderDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CreateTripDialog.xaml.cs">
+      <DependentUpon>CreateTripDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CreateVehicleDialog.xaml.cs">
+      <DependentUpon>CreateVehicleDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Enums\CargoType.cs" />
     <Compile Include="Model\Enums\ClientType.cs" />
@@ -108,10 +120,26 @@
     <Compile Include="Model\Enums\TripStatus.cs" />
     <Compile Include="Model\Enums\VehicleBodyType.cs" />
     <Compile Include="Model\Enums\VehicleStatus.cs" />
+    <Compile Include="Model\OrderExtensions.cs" />
     <Compile Include="Services\DataService.cs" />
+    <Compile Include="ViewModels\CreateDriverViewModel.cs" />
     <Compile Include="ViewModels\CreateOrderViewModel.cs" />
+    <Compile Include="ViewModels\CreateTripViewModel.cs" />
+    <Compile Include="ViewModels\CreateVehicleViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Page Include="Dialogs\CreateDriverDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dialogs\CreateOrderDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\CreateTripDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\CreateVehicleDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,5 @@
-﻿using Automobile_Company.Model;
+﻿
+using Automobile_Company.Model;
 using Automobile_Company.Model.Enums;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,17 @@ namespace Automobile_Company.Services
     public class DataService
     {
         private static DataService _instance;
-        public static DataService Instance => _instance ?? new DataService();
+        public static DataService Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new DataService();
+                }
+                return _instance;
+            }
+        }
 
         public ObservableCollection<Order> Orders { get; private set; }
         public ObservableCollection<Trip> Trips { get; private set; }
@@ -30,13 +41,14 @@ namespace Automobile_Company.Services
         {
             LoadAllData();
 
-            // Подписываемся на изменения коллекций
+            //Подписываемся на изменения коллекций
             Drivers.CollectionChanged += (s, e) => SaveDrivers();
             Vehicles.CollectionChanged += (s, e) => SaveVehicles();
             Clients.CollectionChanged += (s, e) => SaveClients();
             Orders.CollectionChanged += (s, e) => SaveOrders();
             Trips.CollectionChanged += (s, e) => SaveTrips();
         }
+
 
         private void LoadAllData()
         {
@@ -63,6 +75,8 @@ namespace Automobile_Company.Services
             }
         }
 
+        
+
         private T LoadData<T>(string filePath) where T : class
         {
             if (!File.Exists(filePath)) return null;
@@ -81,16 +95,17 @@ namespace Automobile_Company.Services
 
         private void SaveData<T>(string filePath, T data)
         {
-            try
+            /*try
             {
                 var serializer = new XmlSerializer(typeof(T));
                 var writer = new StreamWriter(filePath);
                 serializer.Serialize(writer, data);
+                writer.Close();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка сохранения данных: {ex.Message}");
-            }
+                Console.WriteLine($"Ошибка сохранения данных в {filePath}: {ex.Message}");
+            }*/
         }
 
         public void SaveOrders() => SaveData(OrdersFile, Orders);
@@ -122,6 +137,7 @@ namespace Automobile_Company.Services
                 Trips.Add(trip);
             }
         }
+
         public void AddTrip(Trip trip)
         {
             if (trip == null) throw new ArgumentNullException(nameof(trip));
@@ -140,22 +156,53 @@ namespace Automobile_Company.Services
             {
                 trip.Crew.Status = DriverStatus.OnTrip;
             }
+
+            // Обновляем статус заказа
+            trip.Order.Status = OrderStatus.InProgress;
+
             Trips.Add(trip);
         }
+
         public void AddDriver(Driver driver)
         {
             if (driver == null) throw new ArgumentNullException(nameof(driver));
             Drivers.Add(driver);
         }
+
         public void AddVehicle(Vehicle vehicle)
         {
             if (vehicle == null) throw new ArgumentNullException(nameof(vehicle));
             Vehicles.Add(vehicle);
         }
+
         public void AddClient(Client client)
         {
             if (client == null) throw new ArgumentNullException(nameof(client));
-            Clients.Add(client);
+
+            // Проверяем, нет ли уже такого клиента
+            bool clientExists = false;
+
+            if (client is IndividualClient individual)
+            {
+                clientExists = Clients.OfType<IndividualClient>().Any(c =>
+                    c.FullName == individual.FullName &&
+                    c.Phone == individual.Phone &&
+                    c.PassportSeries == individual.PassportSeries &&
+                    c.PassportNumber == individual.PassportNumber);
+            }
+            else if (client is LegalClient legal)
+            {
+                clientExists = Clients.OfType<LegalClient>().Any(c =>
+                    c.CompanyName == legal.CompanyName &&
+                    c.Phone == legal.Phone &&
+                    c.Inn == legal.Inn);
+            }
+
+            if (!clientExists)
+            {
+                Clients.Add(client);
+            }
+            // Если клиент уже существует, можно не добавлять или показать сообщение
         }
 
         public void UpdateDriver(Driver driver)

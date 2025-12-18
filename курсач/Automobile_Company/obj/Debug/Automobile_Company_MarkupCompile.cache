@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\U-ber\TechTest\курсач\Automobile_Company\obj\Debug\
+G:\VisualStudio\repos\Automobile_Company\obj\Debug\
 Automobile_Company
 none
 false
 DEBUG;TRACE
-C:\Users\U-ber\TechTest\курсач\Automobile_Company\App.xaml
-21432439308
+G:\VisualStudio\repos\Automobile_Company\App.xaml
+5-1488399298
 
-34-2141084220
-231173019768
-Dialogs\CreateOrderDialog.xaml;MainWindow.xaml;
+45-791610622
+23-430005831
+Dialogs\CreateDriverDialog.xaml;Dialogs\CreateOrderDialog.xaml;Dialogs\CreateTripDialog.xaml;Dialogs\CreateVehicleDialog.xaml;MainWindow.xaml;
 
 False
 

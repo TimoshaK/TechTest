@@ -400,7 +400,7 @@
 
                     <!-- Список заказов в виде карточек -->
                     <ScrollViewer Grid.Row="1">
-                        <ItemsControl ItemsSource="{Binding FilteredOrders}" 
+                        <ItemsControl ItemsSource="{Binding Orders}" 
                                       ItemTemplate="{StaticResource OrderCardTemplate}"
                                       Margin="10">
                             <ItemsControl.ItemsPanel>

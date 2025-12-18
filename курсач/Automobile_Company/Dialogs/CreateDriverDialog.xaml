@@ -1,0 +1,214 @@
+﻿<Window x:Class="Automobile_Company.Dialogs.CreateDriverDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automobile_Company"
+        xmlns:vm="clr-namespace:Automobile_Company.ViewModels"
+        xmlns:converters="clr-namespace:Automobile_Company.Converters"
+        xmlns:enums="clr-namespace:Automobile_Company.Model.Enums"
+        mc:Ignorable="d"
+        Title="Добавление водителя" 
+        Height="600" Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:CreateDriverViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="#2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1976D2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="SectionHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Foreground" Value="#2196F3"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Добавление нового водителя" 
+                   Style="{StaticResource SectionHeaderStyle}"
+                   Grid.Row="0"/>
+
+        <!-- Основное содержимое -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Основная информация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Основная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <TextBlock Text="ФИО*"/>
+                    <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Табельный номер*"/>
+                            <TextBox Text="{Binding EmployeeId, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Телефон"/>
+                            <TextBox Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Личная информация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Личная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Год рождения*"/>
+                            <TextBox Text="{Binding BirthYear, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Стаж работы (лет)*"/>
+                            <TextBox Text="{Binding ExperienceYears, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Адрес"/>
+                    <TextBox Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <!-- Квалификация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Квалификация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Категория прав"/>
+                            <ComboBox SelectedItem="{Binding Category}">
+                                <ComboBox.Items>
+                                    <enums:DriverCategory>B</enums:DriverCategory>
+                                    <enums:DriverCategory>C</enums:DriverCategory>
+                                    <enums:DriverCategory>CE</enums:DriverCategory>
+                                    <enums:DriverCategory>D</enums:DriverCategory>
+                                    <enums:DriverCategory>DE</enums:DriverCategory>
+                                </ComboBox.Items>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Класс водителя"/>
+                            <ComboBox SelectedItem="{Binding SkillClass}">
+                                <ComboBox.Items>
+                                    <enums:DriverClass>I</enums:DriverClass>
+                                    <enums:DriverClass>II</enums:DriverClass>
+                                    <enums:DriverClass>III</enums:DriverClass>
+                                    <enums:DriverClass>Master</enums:DriverClass>
+                                </ComboBox.Items>
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Дополнительная информация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Дополнительная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <TextBlock Text="Дата окончания действия прав"/>
+                    <DatePicker SelectedDate="{Binding LicenseExpiryDate, UpdateSourceTrigger=PropertyChanged}"
+                                Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Примечания"/>
+                    <TextBox Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}"
+                             Height="60" TextWrapping="Wrap" AcceptsReturn="True"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Кнопки действий -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Сохранить" Width="120" Padding="15,8"
+                    Command="{Binding SaveCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#4CAF50">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#388E3C"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Отмена" Width="120" Padding="15,8" Margin="10,0,0,0"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#F44336">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#D32F2F"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
