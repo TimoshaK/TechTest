@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\vector2extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\vector2extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\icollidable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\icollidable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\iupdatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\iupdatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\gamerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\gamerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\menuconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\menuconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\ispatialindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\ispatialindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\irenderdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\irenderdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\ilevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\ilevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\igamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\igamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\igameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\igameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\gamesavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\gamesavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\gameinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\gameinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\blockfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\blockfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\game\\arkanoidgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\game\\arkanoidgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|g:\\telegram downl\\arkanoid.core\\arkanoid.core\\arkanoid.core\\entities\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0538D9-FA96-48B9-BEE9-E4FE124A2655}|Arkanoid.Core\\Arkanoid.Core.csproj|solutionrelative:arkanoid.core\\entities\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikita996\\source\\repos\\Arkanoid.Core\\Arkanoid.Core\\Game\\\uFEFFBlockFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 304,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuConstants.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\MenuConstants.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\MenuConstants.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\MenuConstants.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\MenuConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:43:54.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameRenderer.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\GameRenderer.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\GameRenderer.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\GameRenderer.cs",
+              "RelativeToolTip": "Arkanoid.Core\\GameRenderer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwDwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:17:21.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameWindow.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\GameWindow.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\GameWindow.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\GameWindow.cs",
+              "RelativeToolTip": "Arkanoid.Core\\GameWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:16:46.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Program.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Program.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Program.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:15:47.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICollidable.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\ICollidable.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\ICollidable.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\ICollidable.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\ICollidable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:46:51.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Block.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Block.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Block.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Block.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Block.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:49:37.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUpdatable.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\IUpdatable.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\IUpdatable.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\IUpdatable.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\IUpdatable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:50:06.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelData.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\LevelData.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\LevelData.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\LevelData.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\LevelData.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA7wBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:42:49.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Paddle.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Paddle.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Paddle.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Paddle.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Paddle.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwCAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:50:36.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Vector2.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Vector2.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Vector2.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Vector2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:50:19.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Vector2Extensions.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Vector2Extensions.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Vector2Extensions.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Vector2Extensions.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Vector2Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:54:37.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\LevelManager.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\LevelManager.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\LevelManager.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAkwLIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:43:09.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISpatialIndex.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ISpatialIndex.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\ISpatialIndex.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ISpatialIndex.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\ISpatialIndex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:42:23.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRenderDataProvider.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IRenderDataProvider.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\IRenderDataProvider.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IRenderDataProvider.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\IRenderDataProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:43:45.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ILevelManager.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ILevelManager.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\ILevelManager.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ILevelManager.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\ILevelManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:42:33.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IGameStateManager.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IGameStateManager.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\IGameStateManager.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IGameStateManager.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\IGameStateManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:41:51.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGameObjects.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IGameObjects.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\IGameObjects.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\IGameObjects.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\IGameObjects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:42:10.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GameSaveData.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameSaveData.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\GameSaveData.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameSaveData.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\GameSaveData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:51:09.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GameInputHandler.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameInputHandler.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\GameInputHandler.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameInputHandler.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\GameInputHandler.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwBgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:48:34.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\GameConstants.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\GameConstants.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\GameConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:49:22.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BlockFactory.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\BlockFactory.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\BlockFactory.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\BlockFactory.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\BlockFactory.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:05:27.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ArkanoidGame.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ArkanoidGame.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Game\\ArkanoidGame.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Game\\ArkanoidGame.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Game\\ArkanoidGame.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwCEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:48:59.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Enums.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Enums.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Enums.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Enums.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:49:51.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Ball.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Ball.cs",
+              "RelativeDocumentMoniker": "Arkanoid.Core\\Entities\\Ball.cs",
+              "ToolTip": "G:\\Telegram downl\\Arkanoid.Core\\Arkanoid.Core\\Arkanoid.Core\\Entities\\Ball.cs",
+              "RelativeToolTip": "Arkanoid.Core\\Entities\\Ball.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:50:54.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "\uFEFFBlockFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Nikita996\\source\\repos\\Arkanoid.Core\\Arkanoid.Core\\Game\\\uFEFFBlockFactory.cs",
+              "ToolTip": "C:\\Users\\Nikita996\\source\\repos\\Arkanoid.Core\\Arkanoid.Core\\Game\\\uFEFFBlockFactory.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:43:29.23Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

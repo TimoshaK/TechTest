@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArkanoidSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Score>750</Score>
+  <Lives>2</Lives>
+  <BallPosition X="454.69125" Y="500.59024" />
+  <BallVelocity X="-198.00002" Y="629.59985" />
+  <PaddlePosition X="457" Y="550" />
+  <Blocks>
+    <Block>
+      <Position X="29.75" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="104.25" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="178.75" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="253.25" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="327.75" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="402.25" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="476.75" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="551.25" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="625.75" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="700.25" Y="50" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="29.75" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="104.25" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="178.75" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="253.25" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="327.75" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="402.25" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="476.75" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="551.25" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="625.75" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="700.25" Y="84.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="29.75" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="104.25" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="178.75" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="253.25" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="327.75" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="402.25" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="476.75" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="551.25" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="625.75" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="700.25" Y="119" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>3</HitPoints>
+    </Block>
+    <Block>
+      <Position X="29.75" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="104.25" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="178.75" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="253.25" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="327.75" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="402.25" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="476.75" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="551.25" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="625.75" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>2</HitPoints>
+    </Block>
+    <Block>
+      <Position X="700.25" Y="153.5" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="29.75" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="104.25" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>true</IsDestroyed>
+      <HitPoints>0</HitPoints>
+    </Block>
+    <Block>
+      <Position X="178.75" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="253.25" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>true</IsDestroyed>
+      <HitPoints>0</HitPoints>
+    </Block>
+    <Block>
+      <Position X="327.75" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="402.25" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="476.75" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>true</IsDestroyed>
+      <HitPoints>0</HitPoints>
+    </Block>
+    <Block>
+      <Position X="551.25" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>true</IsDestroyed>
+      <HitPoints>0</HitPoints>
+    </Block>
+    <Block>
+      <Position X="625.75" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>false</IsDestroyed>
+      <HitPoints>1</HitPoints>
+    </Block>
+    <Block>
+      <Position X="700.25" Y="188" />
+      <Type>Normal</Type>
+      <IsDestroyed>true</IsDestroyed>
+      <HitPoints>0</HitPoints>
+    </Block>
+  </Blocks>
+  <SaveTime>2025-12-17T20:58:10.7679387+07:00</SaveTime>
+  <CurrentLevel>3</CurrentLevel>
+  <LevelBallSpeed>660</LevelBallSpeed>
+  <LevelPaddleSpeed>419.99997</LevelPaddleSpeed>
+  <LevelBallRadius>10</LevelBallRadius>
+  <LevelPaddleWidth>90</LevelPaddleWidth>
+  <LevelBackgroundColor>
+    <R>40</R>
+    <G>10</G>
+    <B>50</B>
+    <A>255</A>
+  </LevelBackgroundColor>
+</ArkanoidSave>
