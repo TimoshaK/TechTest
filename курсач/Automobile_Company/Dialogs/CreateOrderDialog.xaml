@@ -125,7 +125,7 @@
                         <StackPanel Grid.Row="3" Margin="0,20,0,0">
                             <TextBlock Text="Получатель"/>
                             <ComboBox ItemsSource="{Binding Clients}"
-                                      SelectedItem="{Binding SelectedReceiver}">
+                                      SelectedItem="{Binding Receiver}">
                                 <ComboBox.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel>
