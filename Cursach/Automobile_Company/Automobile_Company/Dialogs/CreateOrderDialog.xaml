@@ -1,0 +1,433 @@
+﻿<Window x:Class="Automobile_Company.Dialogs.CreateOrderDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automobile_Company"
+        xmlns:vm="clr-namespace:Automobile_Company.ViewModels"
+        xmlns:converters="clr-namespace:Automobile_Company.Converters"
+        xmlns:enums="clr-namespace:Automobile_Company.Model.Enums"
+        mc:Ignorable="d"
+        Title="Создание заказа" 
+        Height="700" Width="900"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:CreateOrderViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <converters:EnumToStringConverter x:Key="EnumToStringConverter"/>
+        <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="#2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1976D2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="InfoTextStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#1976D2"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+        </Style>
+
+        <Style x:Key="SectionHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Foreground" Value="#2196F3"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Создание нового заказа" 
+                   Style="{StaticResource SectionHeaderStyle}"
+                   Grid.Row="0"/>
+
+        <!-- Основное содержимое -->
+        <TabControl Grid.Row="1">
+            <!-- Информация о клиентах -->
+            <!-- Вкладка "Клиенты" -->
+            <TabItem Header="Клиенты">
+                <ScrollViewer>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Отправитель -->
+                        <StackPanel Grid.Row="0">
+                            <TextBlock Text="Отправитель" Style="{StaticResource SectionHeaderStyle}"/>
+
+                            <!-- Выбор типа отправителя - ПРАВИЛЬНЫЙ СПОСОБ -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <RadioButton Content="Физическое лицо" 
+                                 IsChecked="{Binding SenderType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Individual}}"
+                                 GroupName="SenderType"
+                                 Margin="0,0,20,0"/>
+                                <RadioButton Content="Юридическое лицо" 
+                                 IsChecked="{Binding SenderType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Legal}}"
+                                 GroupName="SenderType"/>
+                            </StackPanel>
+
+                            <!-- Поля для физического лица -->
+                            <StackPanel Visibility="{Binding IsSenderIndividual, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="ФИО*"/>
+                                <TextBox Text="{Binding SenderFullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding SenderPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="Серия паспорта"/>
+                                        <TextBox Text="{Binding SenderPassportSeries, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Номер паспорта"/>
+                                        <TextBox Text="{Binding SenderPassportNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+
+                            <!-- Поля для юридического лица -->
+                            <StackPanel Visibility="{Binding IsSenderLegal, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="Название компании*"/>
+                                <TextBox Text="{Binding SenderCompanyName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding SenderPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ФИО директора"/>
+                                <TextBox Text="{Binding SenderDirectorName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Юридический адрес"/>
+                                <TextBox Text="{Binding SenderLegalAddress, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ИНН"/>
+                                <TextBox Text="{Binding SenderInn, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <!-- Получатель -->
+                        <StackPanel Grid.Row="3" Margin="0,20,0,0">
+                            <TextBlock Text="Получатель" Style="{StaticResource SectionHeaderStyle}"/>
+
+                            <!-- Выбор типа получателя - ПРАВИЛЬНЫЙ СПОСОБ -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <RadioButton Content="Физическое лицо" 
+                                 IsChecked="{Binding ReceiverType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Individual}}"
+                                 GroupName="ReceiverType"
+                                 Margin="0,0,20,0"/>
+                                <RadioButton Content="Юридическое лицо" 
+                                 IsChecked="{Binding ReceiverType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enums:ClientType.Legal}}"
+                                 GroupName="ReceiverType"/>
+                            </StackPanel>
+
+                            <!-- Поля для физического лица -->
+                            <StackPanel Visibility="{Binding IsReceiverIndividual, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="ФИО*"/>
+                                <TextBox Text="{Binding ReceiverFullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding ReceiverPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="Серия паспорта"/>
+                                        <TextBox Text="{Binding ReceiverPassportSeries, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Номер паспорта"/>
+                                        <TextBox Text="{Binding ReceiverPassportNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+
+                            <!-- Поля для юридического лица -->
+                            <StackPanel Visibility="{Binding IsReceiverLegal, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Text="Название компании*"/>
+                                <TextBox Text="{Binding ReceiverCompanyName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Телефон*"/>
+                                <TextBox Text="{Binding ReceiverPhone, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ФИО директора"/>
+                                <TextBox Text="{Binding ReceiverDirectorName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Юридический адрес"/>
+                                <TextBox Text="{Binding ReceiverLegalAddress, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="ИНН"/>
+                                <TextBox Text="{Binding ReceiverInn, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+
+            <!-- Груз -->
+            <TabItem Header="Груз">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Панель инструментов -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Добавить груз" 
+                                Command="{Binding AddCargoItemCommand}"
+                                Padding="8,4"/>
+                        <Button Content="Удалить выбранный" 
+                                Command="{Binding RemoveCargoItemCommand}"
+                                Padding="8,4"/>
+                    </StackPanel>
+
+                    <!-- Список грузов -->
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding CargoItems}"
+                              AutoGenerateColumns="False" CanUserAddRows="False"
+                              SelectedItem="{Binding SelectedCargoItem}"
+                              CanUserReorderColumns="False" CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Наименование" 
+                                                Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="150"/>
+                            <DataGridComboBoxColumn Header="Тип груза" Width="120"
+                                                    SelectedItemBinding="{Binding CargoType}">
+                                <DataGridComboBoxColumn.ElementStyle>
+                                    <Style TargetType="ComboBox">
+                                        <Setter Property="ItemsSource">
+                                            <Setter.Value>
+                                                <x:Array Type="enums:CargoType">
+                                                    <enums:CargoType>General</enums:CargoType>
+                                                    <enums:CargoType>Fragile</enums:CargoType>
+                                                    <enums:CargoType>Perishable</enums:CargoType>
+                                                    <enums:CargoType>Hazardous</enums:CargoType>
+                                                    <enums:CargoType>Bulk</enums:CargoType>
+                                                    <enums:CargoType>Liquid</enums:CargoType>
+                                                    <enums:CargoType>Refrigerated</enums:CargoType>
+                                                </x:Array>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridComboBoxColumn.ElementStyle>
+                                <DataGridComboBoxColumn.EditingElementStyle>
+                                    <Style TargetType="ComboBox">
+                                        <Setter Property="ItemsSource">
+                                            <Setter.Value>
+                                                <x:Array Type="enums:CargoType">
+                                                    <enums:CargoType>General</enums:CargoType>
+                                                    <enums:CargoType>Fragile</enums:CargoType>
+                                                    <enums:CargoType>Perishable</enums:CargoType>
+                                                    <enums:CargoType>Hazardous</enums:CargoType>
+                                                    <enums:CargoType>Bulk</enums:CargoType>
+                                                    <enums:CargoType>Liquid</enums:CargoType>
+                                                    <enums:CargoType>Refrigerated</enums:CargoType>
+                                                </x:Array>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridComboBoxColumn.EditingElementStyle>
+                            </DataGridComboBoxColumn>
+                            <DataGridTextColumn Header="Кол-во" 
+                                                Binding="{Binding Quantity, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="80"/>
+                            <DataGridTextColumn Header="Ед. изм." 
+                                                Binding="{Binding Unit, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="80"/>
+                            <DataGridTextColumn Header="Вес (кг)" 
+                                                Binding="{Binding TotalWeight, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="80"/>
+                            <DataGridTextColumn Header="Страх. стоимость" 
+                                                Binding="{Binding InsuranceValue, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:C}}"
+                                                Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Итоги -->
+                    <Border Grid.Row="2" BorderBrush="#E0E0E0" BorderThickness="1" 
+                            CornerRadius="5" Padding="10" Margin="0,10,0,0">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="Общий вес: " Style="{StaticResource InfoTextStyle}"/>
+                            <TextBlock Text="{Binding TotalWeight, StringFormat={}{0:F2} кг}" 
+                                       Style="{StaticResource InfoTextStyle}" Margin="5,0,20,0"/>
+
+                            <TextBlock Text="Общая страх. стоимость: " Style="{StaticResource InfoTextStyle}"/>
+                            <TextBlock Text="{Binding TotalInsuranceValue, StringFormat={}{0:C}}" 
+                                       Style="{StaticResource InfoTextStyle}" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- Маршрут и оплата -->
+            <TabItem Header="Маршрут и оплата">
+                <ScrollViewer>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Адрес погрузки -->
+                        <StackPanel Grid.Row="0">
+                            <TextBlock Text="Адрес погрузки"/>
+                            <TextBox Text="{Binding LoadingAddress, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <!-- Адрес разгрузки -->
+                        <StackPanel Grid.Row="1">
+                            <TextBlock Text="Адрес разгрузки"/>
+                            <TextBox Text="{Binding UnloadingAddress, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <!-- Длина маршрута -->
+                        <StackPanel Grid.Row="2">
+                            <TextBlock Text="Длина маршрута (км)"/>
+                            <TextBox Text="{Binding RouteLength, UpdateSourceTrigger=PropertyChanged}">
+                                <TextBox.Style>
+                                    <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="Validation.HasError" Value="true">
+                                                <Setter Property="BorderBrush" Value="Red"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBox.Style>
+                            </TextBox>
+                        </StackPanel>
+
+                        <!-- Стоимость заказа -->
+                        <StackPanel Grid.Row="3">
+                            <TextBlock Text="Стоимость заказа"/>
+                            <TextBox Text="{Binding OrderCost, UpdateSourceTrigger=PropertyChanged}">
+                                <TextBox.Style>
+                                    <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="Validation.HasError" Value="true">
+                                                <Setter Property="BorderBrush" Value="Red"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBox.Style>
+                            </TextBox>
+                        </StackPanel>
+
+                        <!-- Способ оплаты -->
+                        <StackPanel Grid.Row="4">
+                            <TextBlock Text="Способ оплаты"/>
+                            <ComboBox SelectedItem="{Binding PaymentMethod}">
+                                <ComboBox.Items>
+                                    <enums:PaymentMethod>Cash</enums:PaymentMethod>
+                                    <enums:PaymentMethod>BankTransfer</enums:PaymentMethod>
+                                    <enums:PaymentMethod>Card</enums:PaymentMethod>
+                                    <enums:PaymentMethod>Online</enums:PaymentMethod>
+                                </ComboBox.Items>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <!-- Примечания -->
+                        <StackPanel Grid.Row="5" Margin="0,10,0,0">
+                            <TextBlock Text="Примечания"/>
+                            <TextBox Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}"
+                                     Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+
+        <!-- Кнопки действий -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Сохранить" Width="120" Padding="15,8"
+                    Command="{Binding SaveCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#4CAF50">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#388E3C"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Отмена" Width="120" Padding="15,8" Margin="10,0,0,0"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#F44336">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#D32F2F"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

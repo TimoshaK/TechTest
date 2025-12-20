@@ -1,0 +1,335 @@
+﻿<Window x:Class="Automobile_Company.Dialogs.CreateTripDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automobile_Company"
+        xmlns:vm="clr-namespace:Automobile_Company.ViewModels"
+        xmlns:converters="clr-namespace:Automobile_Company.Converters"
+        xmlns:enums="clr-namespace:Automobile_Company.Model.Enums"
+        mc:Ignorable="d"
+        Title="Создание рейса" 
+        Height="700" Width="900"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:CreateTripViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
+        <converters:OrderToDisplayConverter x:Key="OrderToDisplayConverter"/>
+        <converters:ClientTypeConverter x:Key="ClientTypeConverter"/>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="#2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1976D2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="SectionHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Foreground" Value="#2196F3"/>
+        </Style>
+
+        <Style x:Key="InfoTextStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#666"/>
+            <Setter Property="Margin" Value="0,2,0,5"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Создание нового рейса" 
+                   Style="{StaticResource SectionHeaderStyle}"
+                   Grid.Row="0"/>
+
+        <!-- Основное содержимое -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Выбор авто -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Выбор Транспортного средства" Style="{StaticResource SectionHeaderStyle}"/>
+                    <ComboBox ItemsSource="{Binding AvailableVehicles}"
+                        SelectedItem="{Binding SelectedVehicle}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding FullName}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding LoadCapacity, StringFormat='Грузоподъемность: {0} т'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding BodyType, StringFormat='Тип кузова: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding Status, StringFormat='Статус: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <!-- Информация о выбранном транспорте -->
+                    <Border BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="5" 
+                    Padding="10" Margin="0,10,0,0"
+                    Visibility="{Binding SelectedVehicle, Converter={StaticResource NullToBooleanConverter}, ConverterParameter=inverse}">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0" Margin="0,0,15,0">
+                                    <TextBlock Text="Транспорт:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.FullName}" Margin="0,5,0,0"/>
+
+                                    <TextBlock Text="Грузоподъемность:" FontWeight="Bold" Margin="0,10,0,0"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.LoadCapacity, StringFormat={}{0} т}" Style="{StaticResource InfoTextStyle}"/>
+
+                                    <TextBlock Text="Тип кузова:" FontWeight="Bold" Margin="0,10,0,0"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.BodyType}" Style="{StaticResource InfoTextStyle}"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="Год выпуска:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.YearOfManufacture}" Style="{StaticResource InfoTextStyle}"/>
+
+                                    <TextBlock Text="Текущий пробег:" FontWeight="Bold" Margin="0,10,0,0"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.CurrentMileage, StringFormat={}{0} км}" Style="{StaticResource InfoTextStyle}"/>
+
+                                    <TextBlock Text="Статус:" FontWeight="Bold" Margin="0,10,0,0"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.Status}" Style="{StaticResource InfoTextStyle}"/>
+
+                                    <!-- Закрепленный водитель -->
+                                    <TextBlock Text="Закрепленный водитель:" FontWeight="Bold" Margin="0,10,0,0"
+                           Visibility="{Binding SelectedVehicle.AssignedDriver, Converter={StaticResource NullToBooleanConverter}, ConverterParameter=inverse}"/>
+                                    <TextBlock Text="{Binding SelectedVehicle.AssignedDriver.FullName}" Style="{StaticResource InfoTextStyle}"
+                           Visibility="{Binding SelectedVehicle.AssignedDriver, Converter={StaticResource NullToBooleanConverter}, ConverterParameter=inverse}"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <!-- Водители -->
+                <StackPanel Margin="0,0,0,20"
+            Visibility="{Binding IsVehicleSelected, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <TextBlock Text="Водители" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <!-- Автоматически добавленный водитель -->
+                    <Border BorderBrush="#4CAF50" BorderThickness="1" CornerRadius="5" 
+            Padding="10" Margin="0,0,0,10"
+            Background="#E8F5E8"
+            Visibility="{Binding HasAssignedDriver, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <StackPanel>
+                            <TextBlock Text="Автоматически добавлен закрепленный водитель:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SelectedVehicle.AssignedDriver.FullName}" Style="{StaticResource InfoTextStyle}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SelectedVehicle.AssignedDriver.Category, StringFormat='Категория: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                            <TextBlock Text="{Binding SelectedVehicle.AssignedDriver.ExperienceYears, StringFormat='Стаж: {0} лет'}" Style="{StaticResource InfoTextStyle}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Список водителей -->
+                    <TextBlock Text="Список водителей в рейсе:" Margin="0,10,0,5"/>
+
+                    <DataGrid ItemsSource="{Binding SelectedDrivers}"
+              AutoGenerateColumns="False" CanUserAddRows="False"
+              SelectedItem="{Binding SelectedDriverFromList}"
+              CanUserReorderColumns="False" CanUserSortColumns="False"
+              Height="150" Margin="0,0,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ФИО" 
+                                Binding="{Binding FullName}"
+                                Width="200"/>
+                            <DataGridTextColumn Header="Категория" 
+                                Binding="{Binding Category}"
+                                Width="100"/>
+                            <DataGridTextColumn Header="Стаж (лет)" 
+                                Binding="{Binding ExperienceYears}"
+                                Width="80"/>
+                            <DataGridTextColumn Header="Класс" 
+                                Binding="{Binding SkillClass}"
+                                Width="80"/>
+                            <DataGridTextColumn Header="Телефон" 
+                                Binding="{Binding PhoneNumber}"
+                                Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Панель добавления водителей -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Добавить водителя" 
+                Command="{Binding AddDriverCommand}"
+                Padding="8,4"/>
+                        <Button Content="Удалить выбранного" 
+                Command="{Binding RemoveDriverCommand}"
+                Padding="8,4" Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <!-- Доступные водители -->
+                    <TextBlock Text="Доступные водители:"/>
+                    <ComboBox ItemsSource="{Binding AvailableDrivers}"
+              SelectedItem="{Binding DriverToAdd}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding FullName}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Category, StringFormat='Категория: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding ExperienceYears, StringFormat='Стаж: {0} лет'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding Status, StringFormat='Статус: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+                <!-- Товары -->
+                <StackPanel Margin="0,0,0,20"
+            Visibility="{Binding IsVehicleSelected, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <TextBlock Text="Доступные товары:" Style="{StaticResource SectionHeaderStyle}"/>
+                    <!-- Список товаров -->
+                    <TextBlock Text="товары в рейсе:" Margin="0,10,0,5"/>
+
+                    <DataGrid ItemsSource="{Binding SelectedItems}"
+              AutoGenerateColumns="False" CanUserAddRows="False"
+              SelectedItem="{Binding SelectedItemFromList}"
+              CanUserReorderColumns="False" CanUserSortColumns="False"
+              Height="150" Margin="0,0,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Тип товара" 
+                                Binding="{Binding CargoType}"
+                                Width="200"/>
+                            <DataGridTextColumn Header="Вес, кг" 
+                                Binding="{Binding TotalWeight}"
+                                Width="100"/>
+                            <DataGridTextColumn Header="Название" 
+                                Binding="{Binding Name}"
+                                Width="80"/>
+                            <DataGridTextColumn Header="Стоимость" 
+                                Binding="{Binding AssignedOrder.PaidAmount}"
+                                Width="80"/>
+                            <DataGridTextColumn Header="Заметки" 
+                                Binding="{Binding Description}"
+                                Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Панель добавления водителей -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Добавить товар" 
+                Command="{Binding AddItemCommand}"
+                Padding="8,4"/>
+                        <Button Content="Удалить" 
+                Command="{Binding RemoveItemCommand}"
+                Padding="8,4" Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <!-- Доступные водители -->
+                    <TextBlock Text="Доступные товары:"/>
+                    <ComboBox ItemsSource="{Binding AvailableItems}"
+                                SelectedItem="{Binding ItemToAdd}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding CargoType, StringFormat='Тип: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding TotalWeight, StringFormat='Вес: {0} кг'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding AssignedOrder.PaidAmount, StringFormat='Стоимость заказа: {0} р'}" Style="{StaticResource InfoTextStyle}"/>
+                                    <TextBlock Text="{Binding Description, StringFormat='Заметка: {0}'}" Style="{StaticResource InfoTextStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
+                
+
+                <!-- Дополнительная информация -->
+                <StackPanel Margin="0,0,0,20"
+                            Visibility="{Binding IsVehicleSelected, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <TextBlock Text="Дополнительная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <TextBlock Text="Дата прибытия на погрузку*"/>
+                    <DatePicker SelectedDate="{Binding ArrivalToLoadingDate}"
+                                Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Время прибытия на погрузку*"/>
+                    <TextBox Text="{Binding ArrivalToLoadingTime, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Примечания"/>
+                    <TextBox Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}"
+                             Height="80" TextWrapping="Wrap" AcceptsReturn="True"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Кнопки действий -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Создать" Width="120" Padding="15,8"
+                    Command="{Binding SaveCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#4CAF50"
+                    IsEnabled="{Binding CanCreateTrip}">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#388E3C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#CCCCCC"/>
+                                <Setter Property="Foreground" Value="#666666"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Отмена" Width="120" Padding="15,8" Margin="10,0,0,0"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#F44336">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#D32F2F"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
