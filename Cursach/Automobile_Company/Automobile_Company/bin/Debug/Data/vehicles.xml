@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vehicle>
+    <Id>14cf61d5-f5bb-47a9-8b40-ceb045d60411</Id>
+    <LicensePlate>А001АА177</LicensePlate>
+    <Brand>Volvo</Brand>
+    <Model>FH16</Model>
+    <LoadCapacity>20</LoadCapacity>
+    <Purpose>Междугородние перевозки</Purpose>
+    <YearOfManufacture>2019</YearOfManufacture>
+    <YearOfOverhaul>2022</YearOfOverhaul>
+    <MileageAtYearStart>250000</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Van</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId>8ef5b379-4335-4bad-b45b-a11702bfc663</AssignedDriverId>
+    <CurrentMileage>280000</CurrentMileage>
+    <NextMaintenanceDate>2024-06-15T00:00:00</NextMaintenanceDate>
+    <Notes>В отличном состоянии, недавно прошел ТО</Notes>
+  </Vehicle>
+  <Vehicle>
+    <Id>9f543e9a-7b33-4787-838e-96af9c631e90</Id>
+    <LicensePlate>В002ВВ177</LicensePlate>
+    <Brand>MAN</Brand>
+    <Model>TGX</Model>
+    <LoadCapacity>18</LoadCapacity>
+    <Purpose>Городские перевозки</Purpose>
+    <YearOfManufacture>2020</YearOfManufacture>
+    <YearOfOverhaul>0</YearOfOverhaul>
+    <MileageAtYearStart>150000</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Truck</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId>a479af2a-c4b4-4bed-a629-5a3a70ed4053</AssignedDriverId>
+    <CurrentMileage>165000</CurrentMileage>
+    <NextMaintenanceDate>2024-08-20T00:00:00</NextMaintenanceDate>
+    <Notes>Экономный расход топлива</Notes>
+  </Vehicle>
+  <Vehicle>
+    <Id>a0becb70-b1c1-4d3f-a07d-b6bb472f0706</Id>
+    <LicensePlate>А001АА177</LicensePlate>
+    <Brand>Volvo</Brand>
+    <Model>FH16</Model>
+    <LoadCapacity>20</LoadCapacity>
+    <Purpose>Междугородние перевозки</Purpose>
+    <YearOfManufacture>2019</YearOfManufacture>
+    <YearOfOverhaul>2022</YearOfOverhaul>
+    <MileageAtYearStart>250000</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Van</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId>8ef5b379-4335-4bad-b45b-a11702bfc663</AssignedDriverId>
+    <CurrentMileage>280000</CurrentMileage>
+    <NextMaintenanceDate>2024-06-15T00:00:00</NextMaintenanceDate>
+    <Notes>В отличном состоянии, недавно прошел ТО</Notes>
+  </Vehicle>
+  <Vehicle>
+    <Id>f16c5601-c3f6-4228-b777-b13df77d40d9</Id>
+    <LicensePlate>В002ВВ177</LicensePlate>
+    <Brand>MAN</Brand>
+    <Model>TGX</Model>
+    <LoadCapacity>18</LoadCapacity>
+    <Purpose>Городские перевозки</Purpose>
+    <YearOfManufacture>2020</YearOfManufacture>
+    <YearOfOverhaul>0</YearOfOverhaul>
+    <MileageAtYearStart>150000</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Truck</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId>a479af2a-c4b4-4bed-a629-5a3a70ed4053</AssignedDriverId>
+    <CurrentMileage>165000</CurrentMileage>
+    <NextMaintenanceDate>2024-08-20T00:00:00</NextMaintenanceDate>
+    <Notes>Экономный расход топлива</Notes>
+  </Vehicle>
+</ArrayOfVehicle>

@@ -13,6 +13,7 @@
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
+        <converters:VehicleImageConverter x:Key="VehicleImageConverter"/>
         <!-- Конвертер для цвета статуса заказа -->
         <converters:OrderStatusToColorConverter x:Key="StatusColorConverter"/>
         <!-- Конвертер для цвета статуса заказа -->
@@ -519,8 +520,8 @@
                     <Border Grid.Row="0" Background="#F5F5F5" Padding="10">
                         <StackPanel Orientation="Horizontal">
                             <Button Content="Добавить" Margin="5" Padding="12,6" 
-                                    Command="{Binding AddVehicleCommand}"
-                                    Background="#2196F3" Foreground="White">
+                        Command="{Binding AddVehicleCommand}"
+                        Background="#2196F3" Foreground="White">
                                 <Button.Style>
                                     <Style TargetType="Button">
                                         <Setter Property="Cursor" Value="Hand"/>
@@ -536,25 +537,104 @@
                         </StackPanel>
                     </Border>
 
-                    <!-- Список автомобилей (оставляем таблицу для удобства) -->
+                    <!-- Список автомобилей с изображениями -->
                     <DataGrid Grid.Row="1" ItemsSource="{Binding Vehicles}" 
-                              AutoGenerateColumns="False" IsReadOnly="True"
-                              SelectionMode="Single" SelectionUnit="FullRow"
-                              SelectedItem="{Binding SelectedVehicle}">
+                  AutoGenerateColumns="False" IsReadOnly="True"
+                  SelectionMode="Single" SelectionUnit="FullRow"
+                  SelectedItem="{Binding SelectedVehicle}"
+                  RowHeight="70"
+                  CanUserResizeRows="False"
+                  CanUserReorderColumns="False"
+                  CanUserSortColumns="True"
+                  VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Auto">
+
+                        <!-- Ресурсы для DataGrid -->
+                        <DataGrid.Resources>
+                            <!-- Конвертер для проверки наличия изображения -->
+                            <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
+
+                            <!-- Стиль для центрирования содержимого ячеек -->
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="5"/>
+                            </Style>
+
+                            <!-- Стиль для центрирования заголовков -->
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Background" Value="#F5F5F5"/>
+                            </Style>
+                        </DataGrid.Resources>
+
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Гос. номер" Binding="{Binding LicensePlate}" Width="100"/>
-                            <DataGridTextColumn Header="Марка" Binding="{Binding Brand}" Width="100"/>
-                            <DataGridTextColumn Header="Модель" Binding="{Binding Model}" Width="100"/>
-                            <DataGridTextColumn Header="Грузоподъемность" Binding="{Binding LoadCapacity, StringFormat={}{0} т}" Width="120"/>
-                            <DataGridTextColumn Header="Тип кузова" Binding="{Binding BodyType}" Width="100"/>
-                            <DataGridTextColumn Header="Год выпуска" Binding="{Binding YearOfManufacture}" Width="100"/>
-                            <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
-                            <DataGridTextColumn Header="Водитель" Binding="{Binding AssignedDriver.FullName}" Width="150"/>
+                            <DataGridTemplateColumn Header="Фото" Width="80">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Border Width="60" Height="60" 
+                                        CornerRadius="4" 
+                                        BorderBrush="#E0E0E0" 
+                                        BorderThickness="1"
+                                        Background="White">
+                                                <Image Source="{Binding PhotoPath, Converter={StaticResource VehicleImageConverter}}"
+                                           Stretch="UniformToFill"
+                                           Width="58" Height="58"/>
+                                            </Border>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <!-- Гос. номер -->
+                            <DataGridTextColumn Header="Гос. номер" 
+                        Binding="{Binding LicensePlate}" 
+                        Width="100"/>
+
+                            <!-- Марка -->
+                            <DataGridTextColumn Header="Марка" 
+                        Binding="{Binding Brand}" 
+                        Width="90"/>
+
+                            <!-- Модель -->
+                            <DataGridTextColumn Header="Модель" 
+                        Binding="{Binding Model}" 
+                        Width="90"/>
+
+                            <!-- Грузоподъемность -->
+                            <DataGridTextColumn Header="Грузоподъемность" 
+                        Binding="{Binding LoadCapacity, StringFormat={}{0} т}" 
+                        Width="120"/>
+
+                            <!-- Тип кузова -->
+                            <DataGridTextColumn Header="Тип кузова" 
+                        Binding="{Binding BodyType}" 
+                        Width="100"/>
+
+                            <!-- Год выпуска -->
+                            <DataGridTextColumn Header="Год выпуска" 
+                        Binding="{Binding YearOfManufacture}" 
+                        Width="90"/>
+
+                            <!-- Статус -->
+                            <DataGridTextColumn Header="Статус" 
+                        Binding="{Binding Status}" 
+                        Width="90"/>
+
+                            <!-- Статус -->
+                            <DataGridTextColumn Header="Водитель" 
+                        Binding="{Binding FullName}" 
+                        Width="90"/>            
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
             </TabItem>
-
             <!-- Вкладка клиентов -->
             <TabItem Header="Клиенты">
                 <Grid>

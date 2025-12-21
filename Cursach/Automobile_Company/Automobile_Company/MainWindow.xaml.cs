@@ -1,7 +1,10 @@
-﻿using System.Windows;
+﻿using Automobile_Company.Model;
+using Automobile_Company.Services;
+using Automobile_Company.ViewModels;
+
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Automobile_Company.ViewModels;
 
 namespace Automobile_Company
 {
@@ -16,8 +19,21 @@ namespace Automobile_Company
 
             // Обработчик для нажатия правой кнопки мыши на карточке заказа
             this.PreviewMouseRightButtonDown += MainWindow_PreviewMouseRightButtonDown;
+            this.Closing += MainWindow_Closing;
         }
-
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            try
+            {
+                // Сохраняем все данные при закрытии приложения
+                DataService.Instance.SaveAllData();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сохранении данных: {ex.Message}",
+                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
         private void MainWindow_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             // Обработка клика по карточке заказа для выделения
@@ -58,7 +74,15 @@ namespace Automobile_Company
                 }
             }
         }
-
+        private void DriverName_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is Border border && border.Tag is Vehicle vehicle)
+            {
+                // Сохраняем текущий автомобиль для использования в меню
+                border.ContextMenu = (ContextMenu)this.FindResource("DriverContextMenu");
+                border.ContextMenu.Tag = vehicle;
+            }
+        }
         // Обработчик для перетаскивания карточек (опционально)
         private void OrderCard_MouseMove(object sender, MouseEventArgs e)
         {

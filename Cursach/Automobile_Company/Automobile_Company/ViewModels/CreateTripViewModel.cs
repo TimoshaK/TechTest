@@ -430,6 +430,7 @@ namespace Automobile_Company.ViewModels
                 foreach (var item in SelectedItems)
                 {
                     item.CargoStatus = CargoItemStatus.Trip_signed;
+                    
                 }
                 foreach (var driver in SelectedDrivers)
                 {

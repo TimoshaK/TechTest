@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Automobile_Company.Model.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Automobile_Company.Model.Enums;
 using System.Linq;
+using System.Xml.Serialization;
 namespace Automobile_Company.Model
 {
+    [Serializable]
+    [XmlRoot("Order")]
     public class Order : INotifyPropertyChanged
     {
         private Guid _id;
@@ -22,17 +25,24 @@ namespace Automobile_Company.Model
         private decimal _paidAmount;
         private DateTime? _paymentDate;
         private string _notes;
-
+        private double _progress;
         public Guid Id
         {
             get => _id;
-            private set
+            set
             {
-                _id = value;
-                OnPropertyChanged(nameof(Id));
+                if (_id == Guid.Empty)
+                {
+                    _id = value;
+                    OnPropertyChanged(nameof(Id));
+                }
+                // Или если пытаемся установить то же значение (при десериализации)
+                else
+                {
+                    // Ничего не делаем - уже правильное значение
+                }
             }
         }
-
         public DateTime OrderDate
         {
             get => _orderDate;
@@ -42,7 +52,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(OrderDate));
             }
         }
-
+        [XmlIgnore]
         public Client Sender
         {
             get => _sender;
@@ -62,7 +72,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(LoadingAddress));
             }
         }
-
+        [XmlIgnore]
         public Client Receiver
         {
             get => _receiver;
@@ -72,7 +82,11 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(Receiver));
             }
         }
+        [XmlElement("SenderId")]
+        public string SenderId { get; set; }
 
+        [XmlElement("ReceiverId")]
+        public string ReceiverId { get; set; }
         public string UnloadingAddress
         {
             get => _unloadingAddress;
@@ -106,7 +120,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(OrderCost));
             }
         }
-
+        [XmlIgnore]
         public List<CargoItem> CargoItems
         {
             get => _cargoItems ?? new List<CargoItem>();
@@ -117,7 +131,9 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(TotalWeight));
             }
         }
-
+        [XmlArray("CargoItems")]
+        [XmlArrayItem("CargoItemIds")]
+        public List<Guid> CargoItemIds { get; set; }
         public OrderStatus Status
         {
             get => _status;
@@ -209,7 +225,17 @@ namespace Automobile_Company.Model
                     case OrderStatus.Paid:
                         return 5;
                     case OrderStatus.InProgress:
-                        return 50;
+                        List<int> a = new List<int>();
+                        foreach (var item in CargoItems)
+                        {
+                            if(item.CargoStatus == CargoItemStatus.Wait_trip)
+                            {
+                                a.Add(0);
+                            }
+                            else a.Add(1);
+                        }
+                        
+                        return (50 * a.Sum() / a.Count);
                     case OrderStatus.Completed:
                         return 100;
                     case OrderStatus.Cancelled:
@@ -218,7 +244,7 @@ namespace Automobile_Company.Model
                         return 0;
                 }
             }
-            set { Progress = value; }// добавил для работы, была ошибка биндинга
+            set { _progress = value; }// добавил для работы, была ошибка биндинга
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

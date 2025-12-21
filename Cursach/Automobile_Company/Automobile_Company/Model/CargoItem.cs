@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Automobile_Company.Model.Enums;
+using System;
 using System.ComponentModel;
-using Automobile_Company.Model.Enums;
+using System.Xml.Serialization;
 
 namespace Automobile_Company.Model
 {
+    [Serializable]
+    [XmlRoot("CargoItem")]
     public class CargoItem : INotifyPropertyChanged
     {
         private Guid _id;
@@ -20,12 +23,13 @@ namespace Automobile_Company.Model
         public Guid Id
         {
             get => _id;
-            private set
+            set
             {
                 _id = value;
                 OnPropertyChanged(nameof(Id));
             }
         }
+        [XmlIgnore]
         public Order AssignedOrder
         {
             get => _assignedOrder;
@@ -35,6 +39,8 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(AssignedOrder));
             }
         }
+        [XmlElement("AssignedOrderId")]
+        public Guid? AssignedOrderId { get; set; }
         public string Name
         {
             get => _name;

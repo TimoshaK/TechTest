@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/clients.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/default.jpg")]
 
 

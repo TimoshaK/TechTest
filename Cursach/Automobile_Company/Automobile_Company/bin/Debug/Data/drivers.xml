@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDriver xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Driver>
+    <Id>8ef5b379-4335-4bad-b45b-a11702bfc663</Id>
+    <FullName>Смирнов Александр Васильевич</FullName>
+    <EmployeeId>DRV-001</EmployeeId>
+    <BirthYear>1985</BirthYear>
+    <ExperienceYears>12</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>I</SkillClass>
+    <Status>Available</Status>
+    <AssignedVehicleId>a0becb70-b1c1-4d3f-a07d-b6bb472f0706</AssignedVehicleId>
+    <PhoneNumber>+7 (911) 111-22-33</PhoneNumber>
+    <Address>г. Москва, ул. Водительская, д. 10, кв. 25</Address>
+    <LicenseExpiryDate>2026-12-31T00:00:00</LicenseExpiryDate>
+    <Notes>Ответственный водитель, без нарушений</Notes>
+  </Driver>
+  <Driver>
+    <Id>a479af2a-c4b4-4bed-a629-5a3a70ed4053</Id>
+    <FullName>Волков Дмитрий Сергеевич</FullName>
+    <EmployeeId>DRV-002</EmployeeId>
+    <BirthYear>1990</BirthYear>
+    <ExperienceYears>8</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>II</SkillClass>
+    <Status>Available</Status>
+    <AssignedVehicleId>f16c5601-c3f6-4228-b777-b13df77d40d9</AssignedVehicleId>
+    <PhoneNumber>+7 (911) 222-33-44</PhoneNumber>
+    <Address>г. Москва, ул. Транспортная, д. 5, кв. 12</Address>
+    <LicenseExpiryDate>2025-06-30T00:00:00</LicenseExpiryDate>
+    <Notes>Опыт междугородних перевозок</Notes>
+  </Driver>
+  <Driver>
+    <Id>ce77359b-4578-4120-83e6-c9d50b5322b2</Id>
+    <FullName>Смирнов Александр Васильевич</FullName>
+    <EmployeeId>DRV-001</EmployeeId>
+    <BirthYear>1985</BirthYear>
+    <ExperienceYears>12</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>I</SkillClass>
+    <Status>Available</Status>
+    <AssignedVehicleId xsi:nil="true" />
+    <PhoneNumber>+7 (911) 111-22-33</PhoneNumber>
+    <Address>г. Москва, ул. Водительская, д. 10, кв. 25</Address>
+    <LicenseExpiryDate>2026-12-31T00:00:00</LicenseExpiryDate>
+    <Notes>Ответственный водитель, без нарушений</Notes>
+  </Driver>
+  <Driver>
+    <Id>998789e9-ff37-4637-8364-b47fd91a2a50</Id>
+    <FullName>Волков Дмитрий Сергеевич</FullName>
+    <EmployeeId>DRV-002</EmployeeId>
+    <BirthYear>1990</BirthYear>
+    <ExperienceYears>8</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>II</SkillClass>
+    <Status>Available</Status>
+    <AssignedVehicleId xsi:nil="true" />
+    <PhoneNumber>+7 (911) 222-33-44</PhoneNumber>
+    <Address>г. Москва, ул. Транспортная, д. 5, кв. 12</Address>
+    <LicenseExpiryDate>2025-06-30T00:00:00</LicenseExpiryDate>
+    <Notes>Опыт междугородних перевозок</Notes>
+  </Driver>
+</ArrayOfDriver>

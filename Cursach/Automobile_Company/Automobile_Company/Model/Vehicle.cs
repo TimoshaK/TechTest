@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Automobile_Company.Model.Enums;
+using System;
 using System.ComponentModel;
-using Automobile_Company.Model.Enums;
+using System.Xml.Serialization;
 
 namespace Automobile_Company.Model
 {
+    [Serializable]
+    [XmlRoot("Vehicle")]
     public class Vehicle : INotifyPropertyChanged
     {
         private Guid _id;
@@ -16,7 +19,7 @@ namespace Automobile_Company.Model
         private int _yearOfManufacture;
         private int _yearOfOverhaul;
         private double _mileageAtYearStart;
-        private string _photoPath;
+        private string _photoPath = "/Images/default.jpg";
         private VehicleBodyType _bodyType;
         private VehicleStatus _status;
         private Driver _assignedDriver;
@@ -27,7 +30,7 @@ namespace Automobile_Company.Model
         public Guid Id
         {
             get => _id;
-            private set
+            set
             {
                 _id = value;
                 OnPropertyChanged(nameof(Id));
@@ -164,7 +167,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(IsAvailable));
             }
         }
-
+        [XmlIgnore]
         public Driver AssignedDriver
         {
             get => _assignedDriver;
@@ -174,7 +177,8 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(AssignedDriver));
             }
         }
-
+        [XmlElement("AssignedDriverId")]
+        public Guid? AssignedDriverId { get; set; }
         public double CurrentMileage
         {
             get => _currentMileage;
@@ -219,6 +223,22 @@ namespace Automobile_Company.Model
             Status = VehicleStatus.Available;
             CurrentMileage = 0;
         }
+
+
+        public void UnassignDriver()
+        {
+            if (AssignedDriver != null)
+            {
+                var driver = AssignedDriver;
+                AssignedDriver = null;
+                driver.AssignedVehicle = null;
+
+                OnPropertyChanged(nameof(AssignedDriver));
+                OnPropertyChanged(nameof(HasAssignedDriver));
+            }
+        }
+
+        public bool HasAssignedDriver => AssignedDriver != null;
         public string GetVehicleInfo()
         {
             return $"{Name} {Model}, {LicensePlate}";

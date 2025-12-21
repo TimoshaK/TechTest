@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Automobile_Company.Model.Enums;
+using System;
 using System.ComponentModel;
-using Automobile_Company.Model.Enums;
+using System.Xml.Serialization;
 
 namespace Automobile_Company.Model
 {
+    [Serializable]
+    [XmlRoot("Driver")]
     public class Driver : INotifyPropertyChanged
     {
         private Guid _id;
@@ -24,7 +27,7 @@ namespace Automobile_Company.Model
         public Guid Id
         {
             get => _id;
-            private set
+            set
             {
                 _id = value;
                 OnPropertyChanged(nameof(Id));
@@ -106,7 +109,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(IsAvailable));
             }
         }
-
+        [XmlIgnore]
         public Vehicle AssignedVehicle
         {
             get => _assignedVehicle;
@@ -116,7 +119,8 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(AssignedVehicle));
             }
         }
-
+        [XmlElement("AssignedVehicleId")]
+        public Guid? AssignedVehicleId { get; set; }
         public string PhoneNumber
         {
             get => _phoneNumber;

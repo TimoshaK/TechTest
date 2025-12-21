@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Automobile_Company.Model
 {
-    public abstract class Client
+    [Serializable]
+    [XmlInclude(typeof(IndividualClient))]
+    [XmlInclude(typeof(LegalClient))]
+    [XmlRoot("Client")]
+    public abstract class Client : IClient
     {
         private string _phone;
 
@@ -18,7 +19,7 @@ namespace Automobile_Company.Model
 
         public abstract string GetClientInfo();
     }
-
+    [Serializable]
     // Класс для физического лица
     public class IndividualClient : Client
     {
@@ -65,6 +66,7 @@ namespace Automobile_Company.Model
     }
 
     // Класс для юридического лица
+    [Serializable]
     public class LegalClient : Client
     {
         private string _companyName;

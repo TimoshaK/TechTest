@@ -1,13 +1,16 @@
-﻿using System;
-using System.ComponentModel;
-using Automobile_Company.Model.Enums;
+﻿using Automobile_Company.Model.Enums;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Xml.Serialization;
 namespace Automobile_Company.Model
 {
+    [Serializable]
+    [XmlRoot("Trip")]
     public class Trip : INotifyPropertyChanged
     {
         private Guid _id;
-        
         private List<CargoItem> _items;
         private Vehicle _vehicle;
         private List<Driver> _crews = new List<Driver> {new Driver(), new Driver(), new Driver() };
@@ -23,13 +26,13 @@ namespace Automobile_Company.Model
         public Guid Id
         {
             get => _id;
-            private set
+            set
             {
                 _id = value;
                 OnPropertyChanged(nameof(Id));
             }
         }
-        
+        [XmlIgnore]
         public List<CargoItem> Items
         {
             get => _items;
@@ -39,7 +42,11 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(Items));
             }
         }
-
+        [XmlArray("ItemIds")]
+        [XmlArrayItem("ItemId")]
+        public List<Guid> ItemIds { get; set; }
+        
+        [XmlIgnore]
         public Vehicle Vehicle
         {
             get => _vehicle;
@@ -49,7 +56,9 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(Vehicle));
             }
         }
-
+        [XmlElement("VehicleId")]
+        public Guid? VehicleId { get; set; }
+        [XmlIgnore]
         public List<Driver> Crews
         {
             get => _crews;
@@ -59,7 +68,9 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(Crews));
             }
         }
-
+        [XmlArray("CrewIds")]
+        [XmlArrayItem("DriverId")]
+        public List<Guid> CrewIds { get; set; }
         public DateTime ArrivalToLoadingTime
         {
             get => _arrivalToLoadingTime;
@@ -145,7 +156,7 @@ namespace Automobile_Company.Model
                 OnPropertyChanged(nameof(Notes));
             }
         }
-
+        private double _progress;
         public double Progress
         {
             get
@@ -168,7 +179,7 @@ namespace Automobile_Company.Model
                         return 0;
                 }
             }
-            set { Progress = value; }
+            set { _progress = value; }
         }
 
         public bool CanCancel => Status == TripStatus.Created || Status == TripStatus.Loading;

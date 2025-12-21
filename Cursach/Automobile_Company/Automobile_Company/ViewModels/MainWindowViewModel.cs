@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -29,7 +30,6 @@ namespace Automobile_Company.ViewModels
         public ObservableCollection<Driver> Drivers { get; private set; }
         public ObservableCollection<Vehicle> Vehicles { get; private set; }
         public ObservableCollection<Client> Clients { get; private set; }
-
         public Order SelectedOrder
         {
             get => _selectedOrder;
@@ -69,7 +69,6 @@ namespace Automobile_Company.ViewModels
                 OnPropertyChanged();
             }
         }
-
         public Client SelectedClient
         {
             get => _selectedClient;
@@ -79,13 +78,11 @@ namespace Automobile_Company.ViewModels
                 OnPropertyChanged();
             }
         }
-
         // Статистика - Главное окно
         public int CompletedOrdersCount => _dataService.GetCompletedOrdersCount();
         public int InProgressOrdersCount => _dataService.GetInProgressOrdersCount();
         public int AvailableDriversCount => _dataService.GetAvailableDriversCount();
         public int AvailableVehiclesCount => _dataService.GetAvailableVehiclesCount();
-
         // Команды
         public ICommand CreateOrderCommand { get; }
         public ICommand EditOrderCommand { get; }
@@ -100,6 +97,7 @@ namespace Automobile_Company.ViewModels
         public ICommand DeleteVehicleCommand { get; }
         public ICommand DeleteClientCommand { get; }
 
+
         public MainWindowViewModel()
         {
             _dataService = DataService.Instance;
@@ -109,8 +107,7 @@ namespace Automobile_Company.ViewModels
             Drivers = _dataService.Drivers;
             Vehicles = _dataService.Vehicles;
             Clients = _dataService.Clients;
-            
-            // Инициализация команд
+            // Инициализация команд для Binding
             CreateOrderCommand = new RelayCommand(CreateOrder);
             EditOrderCommand = new RelayCommand(EditOrder, CanEditOrder);
             CancelOrderCommand = new RelayCommand(CancelOrder, CanCancelOrder);
@@ -126,6 +123,7 @@ namespace Automobile_Company.ViewModels
             InitializeSampleData();
             SubscribeToCollectionChanges();
         }
+        //Опционально. Начальные данные
         private void InitializeSampleData()
         {
             InitializeSampleClients();
@@ -133,7 +131,6 @@ namespace Automobile_Company.ViewModels
             InitializeSampleVehicles();
             InitializeSampleOrders();
         }
-
         private void InitializeSampleClients()
         {
             // 2 физических лица
@@ -185,7 +182,6 @@ namespace Automobile_Company.ViewModels
             Clients.Add(legal1);
             Clients.Add(legal2);
         }
-
         private void InitializeSampleDrivers()
         {
             // 2 водителя
@@ -224,7 +220,6 @@ namespace Automobile_Company.ViewModels
 
 
         }
-
         private void InitializeSampleVehicles()
         {
             // 2 транспортных средства
@@ -277,7 +272,6 @@ namespace Automobile_Company.ViewModels
 
 
         }
-
         private void InitializeSampleOrders()
         {
             if (Clients.Count < 2) return;
@@ -377,7 +371,6 @@ namespace Automobile_Company.ViewModels
 
 
         }
-
         private void SubscribeToCollectionChanges()
         {
             Orders.CollectionChanged += (s, e) =>
@@ -385,11 +378,14 @@ namespace Automobile_Company.ViewModels
                 OnPropertyChanged(nameof(CompletedOrdersCount));
                 OnPropertyChanged(nameof(InProgressOrdersCount));
             };
-
-            Drivers.CollectionChanged += (s, e) => OnPropertyChanged(nameof(AvailableDriversCount));
+            Drivers.CollectionChanged += (s, e) =>
+            {
+                OnPropertyChanged(nameof(AvailableDriversCount));
+            };
             Vehicles.CollectionChanged += (s, e) => OnPropertyChanged(nameof(AvailableVehiclesCount));
         }
         // Методы команд
+        
         private void CreateOrder(object parameter)
         {
             try
@@ -436,9 +432,28 @@ namespace Automobile_Company.ViewModels
         {
             if (SelectedOrder == null) return;
 
-            // Для простоты создаем новый диалог редактирования
-            MessageBox.Show("Редактирование заказа будет реализовано в следующей версии",
-                "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+            try
+            {
+                var dialog = new EditOrderDialog(SelectedOrder);
+                dialog.Owner = Application.Current.MainWindow;
+                dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
+                if (dialog.ShowDialog() == true)
+                {
+                    // Заказ уже обновлен в ViewModel, но можно обновить представление
+                    MessageBox.Show("Заказ успешно обновлен!",
+                        "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Обновляем свойства для уведомления UI
+                    OnPropertyChanged(nameof(CompletedOrdersCount));
+                    OnPropertyChanged(nameof(InProgressOrdersCount));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при редактировании заказа:\n{ex.Message}",
+                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private bool CanCancelOrder(object parameter) => SelectedOrder?.CanCancel ?? false;
@@ -455,8 +470,6 @@ namespace Automobile_Company.ViewModels
             if (result == MessageBoxResult.Yes)
             {
                 SelectedOrder.Status = Model.Enums.OrderStatus.Cancelled;
-                // Сохраняем изменения
-                _dataService.SaveOrders();
             }
         }
 
@@ -485,7 +498,6 @@ namespace Automobile_Company.ViewModels
                                "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private bool CanCancelTrip(object parameter) => SelectedTrip?.CanCancel ?? false;
         private void CancelTrip(object parameter)
         {
@@ -521,11 +533,6 @@ namespace Automobile_Company.ViewModels
                         Item.AssignedOrder.Status = OrderStatus.Paid;
                     }
                 }
-
-                // Сохраняем изменения
-                _dataService.SaveTrips();
-                _dataService.SaveVehicles();
-                _dataService.SaveDrivers();
             }
         }
         private void AddDriver(object parameter)
@@ -662,7 +669,7 @@ namespace Automobile_Company.ViewModels
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
