@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public class Ball : IUpdatable
     {

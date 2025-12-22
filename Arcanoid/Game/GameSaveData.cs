@@ -1,9 +1,9 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     [Serializable]
     [XmlRoot("ArkanoidSave")]

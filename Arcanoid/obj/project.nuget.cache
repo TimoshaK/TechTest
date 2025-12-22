@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CMBIFlCg9m8=",
+  "dgSpecHash": "QqJowYfx3D8=",
   "success": true,
   "projectFilePath": "C:\\Users\\U-ber\\TechTest\\Arcanoid\\Arcanoid.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\U-ber\\.nuget\\packages\\csfml\\2.6.1\\csfml.2.6.1.nupkg.sha512",
+    "C:\\Users\\U-ber\\.nuget\\packages\\sfml.graphics\\2.6.1\\sfml.graphics.2.6.1.nupkg.sha512",
+    "C:\\Users\\U-ber\\.nuget\\packages\\sfml.system\\2.6.1\\sfml.system.2.6.1.nupkg.sha512",
+    "C:\\Users\\U-ber\\.nuget\\packages\\sfml.window\\2.6.1\\sfml.window.2.6.1.nupkg.sha512"
+  ],
   "logs": []
 }

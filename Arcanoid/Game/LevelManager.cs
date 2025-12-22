@@ -1,9 +1,9 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public class LevelManager : ILevelManager
     {
@@ -15,7 +15,6 @@ namespace Arkanoid.Core.Game
         public LevelData CurrentLevelData =>
             _currentLevelIndex >= 0 && _currentLevelIndex < _levels.Count ?
             _levels[_currentLevelIndex] : null;
-
         public event Action<int> LevelChanged;
         public event Action AllLevelsCompleted;
 

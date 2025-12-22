@@ -1,7 +1,7 @@
-﻿using Arkanoid.Core.Game;
+﻿using Arkanoid.Game;
 using System.Collections.Generic;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public class LevelData
     {

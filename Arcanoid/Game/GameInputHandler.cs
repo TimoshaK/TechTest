@@ -1,14 +1,11 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 using System;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public class GameInputHandler
     {
         private readonly ArkanoidGame _game;
-
-
-
 
         public GameInputHandler(ArkanoidGame game)
         {

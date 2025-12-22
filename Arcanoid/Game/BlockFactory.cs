@@ -1,7 +1,7 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 using System;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public static class BlockFactory
     {

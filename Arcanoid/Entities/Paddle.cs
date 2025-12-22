@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public class Paddle : ICollidable
     {
