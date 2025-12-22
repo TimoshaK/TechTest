@@ -1,0 +1,862 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|g:\\telegram downl\\cursach\\cursach\\automobile_company\\automobile_company\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\cargoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\cargoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\createvehicleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\createvehicleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\createorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\createorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\editorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\editorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createtripdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createtripdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createvehicledialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createvehicledialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\createtripviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\createtripviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\createdriverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\createdriverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\ordertodisplayconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\ordertodisplayconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\orderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\orderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\driverassignmenttooltipconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\driverassignmenttooltipconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\caneditdriverassignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\caneditdriverassignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createtripdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createtripdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createvehicledialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createvehicledialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createdriverdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createdriverdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\orderstatustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\orderstatustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createdriverdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createdriverdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\vehicleimageconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\vehicleimageconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\images\\default.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:images\\default.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\clienttypeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\clienttypeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\orderstatustobackgroundcolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\orderstatustobackgroundcolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\cargoitemstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\cargoitemstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\enumtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\enumtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\enumtobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\enumtobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\vehiclebodytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\vehiclebodytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\cargotype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\cargotype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\stringtoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\stringtoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\driverclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\driverclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\drivercategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\drivercategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\model\\enums\\driverstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\driverstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\paymentstatustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\paymentstatustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\nulltobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\nulltobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditOrderViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\EditOrderViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EditOrderViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\EditOrderViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EditOrderViewModel.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAmwPcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T19:54:06.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA6wGEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T19:55:39.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T09:54:38.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateOrderViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateOrderViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateOrderViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateOrderViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateOrderViewModel.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAqwEMBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:56:38.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateVehicleViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateVehicleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateVehicleViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateVehicleViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateVehicleViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAHkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:52:17.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "Services\\DataService.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Services\\DataService.cs",
+              "RelativeToolTip": "Services\\DataService.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAswK4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:42:46.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Order.cs",
+              "RelativeDocumentMoniker": "Model\\Order.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Order.cs",
+              "RelativeToolTip": "Model\\Order.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:58:35.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CargoItem.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\CargoItem.cs",
+              "RelativeDocumentMoniker": "Model\\CargoItem.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\CargoItem.cs",
+              "RelativeToolTip": "Model\\CargoItem.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:58:28.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Trip.cs",
+              "RelativeDocumentMoniker": "Model\\Trip.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Trip.cs",
+              "RelativeToolTip": "Model\\Trip.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T01:19:13.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditOrderDialog.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\EditOrderDialog.xaml",
+              "RelativeDocumentMoniker": "Dialogs\\EditOrderDialog.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\EditOrderDialog.xaml",
+              "RelativeToolTip": "Dialogs\\EditOrderDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-21T19:51:32.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditOrderDialog.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\EditOrderDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialogs\\EditOrderDialog.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\EditOrderDialog.xaml.cs",
+              "RelativeToolTip": "Dialogs\\EditOrderDialog.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T19:55:06.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateOrderDialog.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateOrderDialog.xaml",
+              "RelativeDocumentMoniker": "Dialogs\\CreateOrderDialog.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateOrderDialog.xaml",
+              "RelativeToolTip": "Dialogs\\CreateOrderDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T22:08:50.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateTripDialog.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateTripDialog.xaml",
+              "RelativeDocumentMoniker": "Dialogs\\CreateTripDialog.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateTripDialog.xaml",
+              "RelativeToolTip": "Dialogs\\CreateTripDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-17T22:13:29.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateVehicleDialog.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateVehicleDialog.xaml",
+              "RelativeDocumentMoniker": "Dialogs\\CreateVehicleDialog.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateVehicleDialog.xaml",
+              "RelativeToolTip": "Dialogs\\CreateVehicleDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-18T00:25:25.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateTripViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateTripViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateTripViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateTripViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateTripViewModel.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAIwBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T00:49:49.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderExtensions.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\OrderExtensions.cs",
+              "RelativeDocumentMoniker": "Model\\OrderExtensions.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\OrderExtensions.cs",
+              "RelativeToolTip": "Model\\OrderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T22:19:27.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\BooleanToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:32:40.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EnumToBooleanConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\EnumToBooleanConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\EnumToBooleanConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\EnumToBooleanConverter.cs",
+              "RelativeToolTip": "Converters\\EnumToBooleanConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:57:36.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\RelayCommand.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:34:01.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T22:36:42.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CargoItemStatus.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\CargoItemStatus.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\CargoItemStatus.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\CargoItemStatus.cs",
+              "RelativeToolTip": "Model\\Enums\\CargoItemStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:31:55.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OrderStatusToBackgroundColorConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderStatusToBackgroundColorConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\OrderStatusToBackgroundColorConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderStatusToBackgroundColorConverter.cs",
+              "RelativeToolTip": "Converters\\OrderStatusToBackgroundColorConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:07:36.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateTripDialog.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateTripDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialogs\\CreateTripDialog.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateTripDialog.xaml.cs",
+              "RelativeToolTip": "Dialogs\\CreateTripDialog.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T22:14:16.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateOrderDialog.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateOrderDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialogs\\CreateOrderDialog.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateOrderDialog.xaml.cs",
+              "RelativeToolTip": "Dialogs\\CreateOrderDialog.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:28:21.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DriverAssignmentTooltipConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\DriverAssignmentTooltipConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\DriverAssignmentTooltipConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\DriverAssignmentTooltipConverter.cs",
+              "RelativeToolTip": "Converters\\DriverAssignmentTooltipConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T09:27:43.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateDriverDialog.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateDriverDialog.xaml",
+              "RelativeDocumentMoniker": "Dialogs\\CreateDriverDialog.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateDriverDialog.xaml",
+              "RelativeToolTip": "Dialogs\\CreateDriverDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-21T08:11:55.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "StringToVisibilityConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\StringToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\StringToVisibilityConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\StringToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\StringToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T09:10:43.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CanEditDriverAssignmentConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\CanEditDriverAssignmentConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\CanEditDriverAssignmentConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\CanEditDriverAssignmentConverter.cs",
+              "RelativeToolTip": "Converters\\CanEditDriverAssignmentConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T09:11:41.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IClient.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\IClient.cs",
+              "RelativeDocumentMoniker": "Model\\IClient.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\IClient.cs",
+              "RelativeToolTip": "Model\\IClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:35:37.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateDriverViewModel.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateDriverViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateDriverViewModel.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateDriverViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateDriverViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:11:46.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "default.jpg",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Images\\default.jpg",
+              "RelativeDocumentMoniker": "Images\\default.jpg",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Images\\default.jpg",
+              "RelativeToolTip": "Images\\default.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-12-20T18:19:11.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "VehicleImageConverters.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\VehicleImageConverters.cs",
+              "RelativeDocumentMoniker": "Converters\\VehicleImageConverters.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\VehicleImageConverters.cs",
+              "RelativeToolTip": "Converters\\VehicleImageConverters.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T18:08:44.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Client.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Client.cs",
+              "RelativeDocumentMoniker": "Model\\Client.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Client.cs",
+              "RelativeToolTip": "Model\\Client.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA3wAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T23:45:13.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ClientTypeConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\ClientTypeConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ClientTypeConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\ClientTypeConverter.cs",
+              "RelativeToolTip": "Converters\\ClientTypeConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:43:01.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Model\\Vehicle.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Vehicle.cs",
+              "RelativeToolTip": "Model\\Vehicle.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T23:45:06.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Driver.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Driver.cs",
+              "RelativeDocumentMoniker": "Model\\Driver.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Driver.cs",
+              "RelativeToolTip": "Model\\Driver.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:15:07.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EnumToStringConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\EnumToStringConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\EnumToStringConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\EnumToStringConverter.cs",
+              "RelativeToolTip": "Converters\\EnumToStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:10:51.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderToDisplayConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderToDisplayConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\OrderToDisplayConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderToDisplayConverter.cs",
+              "RelativeToolTip": "Converters\\OrderToDisplayConverter.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T00:32:34.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TripStatus.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\TripStatus.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\TripStatus.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\TripStatus.cs",
+              "RelativeToolTip": "Model\\Enums\\TripStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:32:03.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateVehicleDialog.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateVehicleDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialogs\\CreateVehicleDialog.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateVehicleDialog.xaml.cs",
+              "RelativeToolTip": "Dialogs\\CreateVehicleDialog.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:11:56.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CreateDriverDialog.xaml.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateDriverDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialogs\\CreateDriverDialog.xaml.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateDriverDialog.xaml.cs",
+              "RelativeToolTip": "Dialogs\\CreateDriverDialog.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:14:38.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "StringToImageConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\StringToImageConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\StringToImageConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\StringToImageConverter.cs",
+              "RelativeToolTip": "Converters\\StringToImageConverter.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:54:04.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DriverClass.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverClass.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\DriverClass.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverClass.cs",
+              "RelativeToolTip": "Model\\Enums\\DriverClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:12:46.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DriverCategory.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverCategory.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\DriverCategory.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverCategory.cs",
+              "RelativeToolTip": "Model\\Enums\\DriverCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:12:18.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DriverStatus.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverStatus.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\DriverStatus.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\DriverStatus.cs",
+              "RelativeToolTip": "Model\\Enums\\DriverStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:13:29.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "VehicleBodyType.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\VehicleBodyType.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\VehicleBodyType.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\VehicleBodyType.cs",
+              "RelativeToolTip": "Model\\Enums\\VehicleBodyType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:13:01.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CargoType.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\CargoType.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\CargoType.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\CargoType.cs",
+              "RelativeToolTip": "Model\\Enums\\CargoType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:32:08.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\OrderStatus.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "Model\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:48:11.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "PaymentStatusToColorConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\PaymentStatusToColorConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\PaymentStatusToColorConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\PaymentStatusToColorConverter.cs",
+              "RelativeToolTip": "Converters\\PaymentStatusToColorConverter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:08:07.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "NullToBooleanConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\NullToBooleanConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\NullToBooleanConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\NullToBooleanConverter.cs",
+              "RelativeToolTip": "Converters\\NullToBooleanConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:09:44.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "App.xaml",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T22:40:17.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OrderStatusToColorConverter.cs",
+              "DocumentMoniker": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderStatusToColorConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\OrderStatusToColorConverter.cs",
+              "ToolTip": "G:\\Telegram downl\\Cursach\\Cursach\\Automobile_Company\\Automobile_Company\\Converters\\OrderStatusToColorConverter.cs",
+              "RelativeToolTip": "Converters\\OrderStatusToColorConverter.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAawCUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:05:56.213Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
