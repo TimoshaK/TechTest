@@ -3,15 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5001005-8751-4701-B50C-E3F71A08B668}|..\\ArcanoidTest\\ArcanoidTest.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoidtest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\game\\arkanoidgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:game\\arkanoidgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5001005-8751-4701-B50C-E3F71A08B668}|..\\ArcanoidTest\\ArcanoidTest.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoidtest\\arcanoidtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\entities\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:entities\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\entities\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:entities\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\Downloads\\Telegram Desktop\\Test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\game\\blockfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:game\\blockfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\arcanoid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:arcanoid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\entities\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:entities\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\entities\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:entities\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|c:\\users\\\u0442\u0438\u043C\u043E\u0444\u0435\u0439\\techtest\\arcanoid\\entities\\vector2extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCFFFADD-1178-4908-8BC1-F304C7E9EB17}|Arcanoid.csproj|solutionrelative:entities\\vector2extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\ArcanoidTest\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArcanoidTest\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Arcanoid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Arcanoid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\ArcanoidTest\\ArcanoidTest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -33,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,20 +86,174 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArcanoidTest",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\ArcanoidTest\\ArcanoidTest.csproj",
+              "RelativeDocumentMoniker": "..\\ArcanoidTest\\ArcanoidTest.csproj",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\ArcanoidTest\\ArcanoidTest.csproj",
+              "RelativeToolTip": "..\\ArcanoidTest\\ArcanoidTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-23T12:40:17.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\ArcanoidTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\ArcanoidTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\ArcanoidTest\\UnitTest1.cs",
+              "RelativeToolTip": "..\\ArcanoidTest\\UnitTest1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:39:09.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Block.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Block.cs",
+              "RelativeDocumentMoniker": "Entities\\Block.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Block.cs",
+              "RelativeToolTip": "Entities\\Block.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:33:23.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameWindow.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\GameWindow.cs",
+              "RelativeDocumentMoniker": "GameWindow.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\GameWindow.cs",
+              "RelativeToolTip": "GameWindow.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwEcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:33:39.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:33:36.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\Downloads\\Telegram Desktop\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\Telegram Desktop\\Test1.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\Downloads\\Telegram Desktop\\Test1.cs",
+              "RelativeToolTip": "..\\..\\Downloads\\Telegram Desktop\\Test1.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:30:42.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlockFactory.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Game\\BlockFactory.cs",
+              "RelativeDocumentMoniker": "Game\\BlockFactory.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Game\\BlockFactory.cs",
+              "RelativeToolTip": "Game\\BlockFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:19:48.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ball.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Ball.cs",
+              "RelativeDocumentMoniker": "Entities\\Ball.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Ball.cs",
+              "RelativeToolTip": "Entities\\Ball.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:03:58.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Paddle.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Paddle.cs",
+              "RelativeDocumentMoniker": "Entities\\Paddle.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Paddle.cs",
+              "RelativeToolTip": "Entities\\Paddle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:03:57.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Vector2.cs",
+              "RelativeDocumentMoniker": "Entities\\Vector2.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Vector2.cs",
+              "RelativeToolTip": "Entities\\Vector2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:03:54.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Vector2Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Vector2Extensions.cs",
+              "RelativeDocumentMoniker": "Entities\\Vector2Extensions.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Entities\\Vector2Extensions.cs",
+              "RelativeToolTip": "Entities\\Vector2Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:03:49.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArkanoidGame.cs",
+              "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Game\\ArkanoidGame.cs",
+              "RelativeDocumentMoniker": "Game\\ArkanoidGame.cs",
+              "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Game\\ArkanoidGame.cs",
+              "RelativeToolTip": "Game\\ArkanoidGame.cs",
+              "ViewState": "AgIAABcDAAAAAAAAAAAAACsDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:03:02.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\ArcanoidTest\\UnitTest1.cs",
               "RelativeDocumentMoniker": "ArcanoidTest\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\ArcanoidTest\\UnitTest1.cs",
               "RelativeToolTip": "ArcanoidTest\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T11:58:11.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T11:58:11.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Arcanoid.csproj",
               "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\Arcanoid.csproj",
               "RelativeDocumentMoniker": "Arcanoid.csproj",
@@ -67,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -75,12 +274,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ViewState": "AgIAAAABAAAAAAAAAAAUwBcBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-23T11:47:45.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T11:47:45.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "ArcanoidTest.csproj",
               "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\ArcanoidTest\\ArcanoidTest.csproj",
               "RelativeDocumentMoniker": "ArcanoidTest\\ArcanoidTest.csproj",
@@ -88,12 +286,11 @@
               "RelativeToolTip": "ArcanoidTest\\ArcanoidTest.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-23T11:46:11.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T11:46:11.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "TestProject1.csproj",
               "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
@@ -104,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "tasks.vs.json",
               "DocumentMoniker": "C:\\Users\\\u0422\u0438\u043C\u043E\u0444\u0435\u0439\\TechTest\\Arcanoid\\.vs\\tasks.vs.json",
               "RelativeDocumentMoniker": ".vs\\tasks.vs.json",
