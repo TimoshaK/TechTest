@@ -90,8 +90,7 @@ namespace Automobile_Company
             {
                 if (element.DataContext is Model.Order order)
                 {
-                    // Можно реализовать Drag & Drop для изменения статуса
-                    // Например, перетаскивание между колонками "Новые", "В процессе", "Выполненные"
+
                 }
             }
         }

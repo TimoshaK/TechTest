@@ -247,7 +247,6 @@ namespace Automobile_Company.Model
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
         public bool CanDelete => Status == VehicleStatus.Available;
     }
 }

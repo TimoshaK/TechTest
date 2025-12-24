@@ -20,7 +20,6 @@ namespace Automobile_Company.Model
         public abstract string GetClientInfo();
     }
     [Serializable]
-    // Класс для физического лица
     public class IndividualClient : Client
     {
         private string _fullName;
@@ -58,7 +57,10 @@ namespace Automobile_Company.Model
             get => _passportIssuedBy;
             set => _passportIssuedBy = value ?? throw new ArgumentNullException(nameof(value));
         }
-
+        public string GetClient
+        {
+            get => $"Физ. лицо: {FullName}, тел.: {Phone}";
+        }
         public override string GetClientInfo()
         {
             return $"Физ. лицо: {FullName}, тел.: {Phone}";
@@ -75,7 +77,7 @@ namespace Automobile_Company.Model
         private string _bankName;
         private string _bankAccount;
         private string _inn;
-
+        
         public string CompanyName
         {
             get => _companyName;
@@ -111,7 +113,10 @@ namespace Automobile_Company.Model
             get => _inn;
             set => _inn = value ?? throw new ArgumentNullException(nameof(value));
         }
-
+        public string GetClient
+        {
+            get => $"Юр. лицо: {CompanyName}, тел.: {Phone}";
+        }
         public override string GetClientInfo()
         {
             return $"Юр. лицо: {CompanyName}, тел.: {Phone}";

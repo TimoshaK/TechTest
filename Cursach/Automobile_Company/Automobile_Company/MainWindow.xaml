@@ -138,7 +138,8 @@
 
         <!-- Шаблон карточки рейса -->
         <DataTemplate x:Key="TripCardTemplate">
-            <Border Style="{StaticResource OrderCardStyle}" Width="300" Height="210">
+            <Border Style="{StaticResource OrderCardStyle}" Width="300" Height="210"
+                    >
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -151,7 +152,7 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Заголовок с ID и статусом -->
+
                     <StackPanel Grid.Row="0" Orientation="Horizontal" 
                                 HorizontalAlignment="Center">
                         <TextBlock Text="{Binding Vehicle.FullName, StringFormat=Рейс {0}}" 
@@ -161,7 +162,7 @@
                                    Foreground="{Binding Status, Converter={StaticResource StatusColorConverter}}"
                                    FontWeight="Bold"/>
                     </StackPanel>
-                    <!-- ID заказа -->
+
                     <TextBlock Grid.Row="1" 
                                Text="Экипаж:" 
                                FontWeight="Bold" Margin="0,5,0,0"/>
@@ -209,6 +210,7 @@
                             </Style>
                         </Button.Style>
                     </Button>
+
                 </Grid>
             </Border>
         </DataTemplate>
@@ -429,7 +431,7 @@
                                     </Style>
                                 </Button.Style>
                             </Button>
-
+                            
                             <!-- Фильтры -->
                             <ComboBox Margin="10,0,0,0" Width="150" 
                                       SelectedValue="{Binding SelectedTripStatusFilter}">
@@ -534,6 +536,21 @@
                                     </Style>
                                 </Button.Style>
                             </Button>
+                            <Button Content="Удалить" Margin="5" Padding="12,6" 
+                                    Command="{Binding DeleteVehicleCommand}"
+                                    Background="Red" Foreground="White">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Cursor" Value="Hand"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#FFA72B05"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
                         </StackPanel>
                     </Border>
 
@@ -553,7 +570,6 @@
                         <DataGrid.Resources>
                             <!-- Конвертер для проверки наличия изображения -->
                             <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
-
                             <!-- Стиль для центрирования содержимого ячеек -->
                             <Style TargetType="DataGridCell">
                                 <Setter Property="VerticalAlignment" Value="Center"/>
@@ -689,7 +705,7 @@
                             <DataGridTextColumn Header="Информация" Width="300">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style TargetType="TextBlock">
-                                        <Setter Property="Text" Value="{Binding GetClientInfo}"/>
+                                        <Setter Property="Text" Value="{Binding GetClient}"/>
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>

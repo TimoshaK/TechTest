@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfDriver xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfDriver xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Driver>
+    <Id>62cfb5a1-622a-4c3c-b677-193addf455d1</Id>
+    <FullName>12</FullName>
+    <EmployeeId>12</EmployeeId>
+    <BirthYear>1995</BirthYear>
+    <ExperienceYears>5</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>III</SkillClass>
+    <Status>OnTrip</Status>
+    <AssignedVehicleId xsi:nil="true" />
+    <PhoneNumber>12</PhoneNumber>
+    <Address>12</Address>
+    <LicenseExpiryDate xsi:nil="true" />
+  </Driver>
+  <Driver>
+    <Id>b74f135a-36b1-4f99-9690-886949a59e3f</Id>
+    <FullName>4536</FullName>
+    <EmployeeId>45</EmployeeId>
+    <BirthYear>1995</BirthYear>
+    <ExperienceYears>5</ExperienceYears>
+    <Category>C</Category>
+    <SkillClass>III</SkillClass>
+    <Status>Available</Status>
+    <AssignedVehicleId xsi:nil="true" />
+    <PhoneNumber>548456</PhoneNumber>
+    <Address>456</Address>
+    <LicenseExpiryDate xsi:nil="true" />
+  </Driver>
+</ArrayOfDriver>

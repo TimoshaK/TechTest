@@ -183,6 +183,7 @@ namespace Automobile_Company.Model
         }
 
         public bool CanCancel => Status == TripStatus.Created || Status == TripStatus.Loading;
+        public bool CanDelete => Status == TripStatus.Cancelled;
         public bool CanEdit => Status == TripStatus.Created;
 
         public event PropertyChangedEventHandler PropertyChanged;

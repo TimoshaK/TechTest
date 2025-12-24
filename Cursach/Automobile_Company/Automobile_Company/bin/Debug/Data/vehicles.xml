@@ -1,2 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vehicle>
+    <Id>1e8dfba3-c38e-48a0-8caf-433f42c86c35</Id>
+    <LicensePlate>21</LicensePlate>
+    <Brand>12</Brand>
+    <Model>12</Model>
+    <LoadCapacity>10</LoadCapacity>
+    <Purpose>12</Purpose>
+    <YearOfManufacture>2020</YearOfManufacture>
+    <YearOfOverhaul>0</YearOfOverhaul>
+    <MileageAtYearStart>12</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Van</BodyType>
+    <Status>OnTrip</Status>
+    <AssignedDriverId xsi:nil="true" />
+    <CurrentMileage>12</CurrentMileage>
+    <NextMaintenanceDate xsi:nil="true" />
+    <Notes>12</Notes>
+  </Vehicle>
+  <Vehicle>
+    <Id>8f607d87-6e95-4368-b77a-6962ac7f2d58</Id>
+    <LicensePlate>456</LicensePlate>
+    <Brand>546</Brand>
+    <Model>456</Model>
+    <LoadCapacity>1045</LoadCapacity>
+    <Purpose>456</Purpose>
+    <YearOfManufacture>2020</YearOfManufacture>
+    <YearOfOverhaul>0</YearOfOverhaul>
+    <MileageAtYearStart>0</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Truck</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId xsi:nil="true" />
+    <CurrentMileage>0</CurrentMileage>
+    <NextMaintenanceDate xsi:nil="true" />
+    <Notes>456</Notes>
+  </Vehicle>
+  <Vehicle>
+    <Id>13fff0c9-ab09-4e46-8965-42aa337ff176</Id>
+    <LicensePlate>453</LicensePlate>
+    <Brand>5345</Brand>
+    <Model>54</Model>
+    <LoadCapacity>10</LoadCapacity>
+    <Purpose>4</Purpose>
+    <YearOfManufacture>2020</YearOfManufacture>
+    <YearOfOverhaul>0</YearOfOverhaul>
+    <MileageAtYearStart>42</MileageAtYearStart>
+    <PhotoPath>/Images/default.jpg</PhotoPath>
+    <BodyType>Van</BodyType>
+    <Status>Available</Status>
+    <AssignedDriverId xsi:nil="true" />
+    <CurrentMileage>42</CurrentMileage>
+    <NextMaintenanceDate xsi:nil="true" />
+    <Notes>45</Notes>
+  </Vehicle>
+</ArrayOfVehicle>

@@ -96,6 +96,7 @@ namespace Automobile_Company.ViewModels
         public ICommand EditVehicleCommand { get; }
         public ICommand DeleteVehicleCommand { get; }
         public ICommand DeleteClientCommand { get; }
+        public ICommand DeleteTripCommand { get; }
         public MainWindowViewModel()
         {
             _dataService = DataService.Instance;
@@ -118,157 +119,11 @@ namespace Automobile_Company.ViewModels
             EditVehicleCommand = new RelayCommand(EditVehicle, CanEditVehicle);
             DeleteVehicleCommand = new RelayCommand(DeleteVehicle, CanDeleteVehicle);
             DeleteClientCommand = new RelayCommand(DeleteClient, CanDeleteClient);
+            DeleteTripCommand = new RelayCommand(DeleteTrip, CanDeleteTrip);
             //InitializeSampleData();
             SubscribeToCollectionChanges();
         }
-        //Опционально. Начальные данные
-        private void InitializeSampleData()
-        {
-            InitializeSampleClients();
-            InitializeSampleDrivers();
-            InitializeSampleVehicles();
-        }
-        private void InitializeSampleClients()
-        {
-            // 2 физических лица
-            var individual1 = new IndividualClient
-            {
-                FullName = "Иванов Иван Иванович",
-                Phone = "+7 (912) 345-67-89",
-                PassportSeries = "4501",
-                PassportNumber = "123456",
-                PassportIssueDate = new DateTime(2015, 5, 15),
-                PassportIssuedBy = "ОВД Центрального района г. Москвы"
-            };
 
-            var individual2 = new IndividualClient
-            {
-                FullName = "Петрова Анна Сергеевна",
-                Phone = "+7 (923) 456-78-90",
-                PassportSeries = "4502",
-                PassportNumber = "654321",
-                PassportIssueDate = new DateTime(2018, 8, 22),
-                PassportIssuedBy = "ОВД Ленинского района г. Санкт-Петербурга"
-            };
-
-            // 2 юридических лица
-            var legal1 = new LegalClient
-            {
-                CompanyName = "ООО 'СтройМонтаж'",
-                Phone = "+7 (495) 123-45-67",
-                DirectorName = "Сидоров Алексей Петрович",
-                LegalAddress = "г. Москва, ул. Строителей, д. 15",
-                BankName = "Сбербанк России",
-                BankAccount = "40702810500000012345",
-                Inn = "7712345678"
-            };
-
-            var legal2 = new LegalClient
-            {
-                CompanyName = "АО 'ПромТранс'",
-                Phone = "+7 (812) 987-65-43",
-                DirectorName = "Козлова Мария Ивановна",
-                LegalAddress = "г. Санкт-Петербург, пр. Промышленный, д. 42",
-                BankName = "ВТБ",
-                BankAccount = "40702810600000054321",
-                Inn = "7812345678"
-            };
-
-            Clients.Add(individual1);
-            Clients.Add(individual2);
-            Clients.Add(legal1);
-            Clients.Add(legal2);
-        }
-        private void InitializeSampleDrivers()
-        {
-            // 2 водителя
-            var driver1 = new Driver
-            {
-                FullName = "Смирнов Александр Васильевич",
-                EmployeeId = "DRV-001",
-                BirthYear = 1985,
-                ExperienceYears = 12,
-                Category = DriverCategory.C,
-                SkillClass = DriverClass.I,
-                PhoneNumber = "+7 (911) 111-22-33",
-                Address = "г. Москва, ул. Водительская, д. 10, кв. 25",
-                LicenseExpiryDate = new DateTime(2026, 12, 31),
-                Status = DriverStatus.Available,
-                Notes = "Ответственный водитель, без нарушений"
-            };
-
-            var driver2 = new Driver
-            {
-                FullName = "Волков Дмитрий Сергеевич",
-                EmployeeId = "DRV-002",
-                BirthYear = 1990,
-                ExperienceYears = 8,
-                Category = DriverCategory.C,
-                SkillClass = DriverClass.II,
-                PhoneNumber = "+7 (911) 222-33-44",
-                Address = "г. Москва, ул. Транспортная, д. 5, кв. 12",
-                LicenseExpiryDate = new DateTime(2025, 6, 30),
-                Status = DriverStatus.Available,
-                Notes = "Опыт междугородних перевозок"
-            };
-
-            Drivers.Add(driver1);
-            Drivers.Add(driver2);
-
-
-        }
-        private void InitializeSampleVehicles()
-        {
-            // 2 транспортных средства
-            var vehicle1 = new Vehicle
-            {
-                LicensePlate = "А001АА177",
-                Brand = "Volvo",
-                Model = "FH16",
-                LoadCapacity = 20.0,
-                Purpose = "Междугородние перевозки",
-                YearOfManufacture = 2019,
-                YearOfOverhaul = 2022,
-                MileageAtYearStart = 250000,
-                CurrentMileage = 280000,
-                BodyType = VehicleBodyType.Van,
-                Status = VehicleStatus.Available,
-                NextMaintenanceDate = new DateTime(2024, 6, 15),
-                Notes = "В отличном состоянии, недавно прошел ТО"
-            };
-
-            var vehicle2 = new Vehicle
-            {
-                LicensePlate = "В002ВВ177",
-                Brand = "MAN",
-                Model = "TGX",
-                LoadCapacity = 18.0,
-                Purpose = "Городские перевозки",
-                YearOfManufacture = 2020,
-                YearOfOverhaul = 0,
-                MileageAtYearStart = 150000,
-                CurrentMileage = 165000,
-                BodyType = VehicleBodyType.Truck,
-                Status = VehicleStatus.Available,
-                NextMaintenanceDate = new DateTime(2024, 8, 20),
-                Notes = "Экономный расход топлива"
-            };
-
-            // Прикрепляем водителей к транспорту
-            if (Drivers.Count >= 2)
-            {
-                vehicle1.AssignedDriver = Drivers[0];
-                Drivers[0].AssignedVehicle = vehicle1;
-
-                vehicle2.AssignedDriver = Drivers[1];
-                Drivers[1].AssignedVehicle = vehicle2;
-            }
-
-            Vehicles.Add(vehicle1);
-            Vehicles.Add(vehicle2);
-
-
-        }
         private void SubscribeToCollectionChanges()
         {
             Orders.CollectionChanged += (s, e) =>
@@ -283,7 +138,12 @@ namespace Automobile_Company.ViewModels
             Vehicles.CollectionChanged += (s, e) => OnPropertyChanged(nameof(AvailableVehiclesCount));
         }
         // Методы команд
-        
+        private bool CanDeleteTrip(object parameter) => SelectedTrip?.CanDelete ?? false;
+        private void DeleteTrip(object parameter)
+        {
+            if (SelectedTrip == null) return;
+            _dataService.DeleteTrip(SelectedTrip);
+        }
         private void CreateOrder(object parameter)
         {
             try
@@ -355,7 +215,6 @@ namespace Automobile_Company.ViewModels
         }
 
         private bool CanCancelOrder(object parameter) => SelectedOrder?.CanCancel ?? false;
-
         private void CancelOrder(object parameter)
         {
             if (SelectedOrder == null) return;
@@ -370,7 +229,6 @@ namespace Automobile_Company.ViewModels
                 SelectedOrder.Status = Model.Enums.OrderStatus.Cancelled;
             }
         }
-
         private void CreateTrip(object parameter)
         {
             try
@@ -399,13 +257,19 @@ namespace Automobile_Company.ViewModels
         private bool CanCancelTrip(object parameter) => SelectedTrip?.CanCancel ?? false;
         private void CancelTrip(object parameter)
         {
-            if (SelectedTrip == null) return;
 
+            if (SelectedTrip == null) return;
+            if (SelectedTrip.Status == TripStatus.Cancelled)
+            {
+                _dataService.DeleteTrip(SelectedTrip);
+                return;
+            }
             var result = MessageBox.Show(
-                $"Вы уверены, что хотите отменить рейс #{SelectedTrip.Id}?",
+                "Вы уверены, что хотите отменить рейс ?",
                 "Подтверждение отмены",
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question);
+
             if (result == MessageBoxResult.Yes)
             {
                 SelectedTrip.Status = TripStatus.Cancelled;
@@ -470,9 +334,7 @@ namespace Automobile_Company.ViewModels
                 // Логика редактирования водителя
             }*/
         }
-
         private bool CanDeleteDriver(object parameter) => SelectedDriver?.CanDelete ?? false;
-
         private void DeleteDriver(object parameter)
         {
             if (SelectedDriver == null) return;
@@ -489,7 +351,6 @@ namespace Automobile_Company.ViewModels
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private void AddVehicle(object parameter)
         {
             try
@@ -516,7 +377,6 @@ namespace Automobile_Company.ViewModels
                                "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private bool CanEditVehicle(object parameter) => SelectedVehicle != null;
 
         private void EditVehicle(object parameter)

@@ -85,28 +85,48 @@ namespace Automobile_Company.Services
             // Создаем словари для быстрого поиска по Id
             var driversDict = Drivers.ToDictionary(d => d.Id);
             var vehiclesDict = Vehicles.ToDictionary(v => v.Id);
+            try
+            {
+                // Восстанавливаем связи водителя с транспортом
+                foreach (var driver in Drivers)
+                {
+                    if (driver.AssignedVehicleId.HasValue && driver.AssignedVehicleId != Guid.Empty)
+                    {
+                        if (vehiclesDict.TryGetValue(driver.AssignedVehicleId.Value, out var vehicle))
+                        {
+                            driver.AssignedVehicle = vehicle;
+                        }
+                        else
+                        {
+                            driver.AssignedVehicle = null;
+                        }
+                    }
+                }
 
-            // Восстанавливаем связи водителя с транспортом
-            foreach (var driver in Drivers)
-            {
-                if (driver.AssignedVehicleId.HasValue && driver.AssignedVehicleId != Guid.Empty)
+                // Восстанавливаем связи транспорта с водителем
+                foreach (var vehicle in Vehicles)
                 {
-                    driver.AssignedVehicle = vehiclesDict[driver.AssignedVehicleId.Value];
+                    if (vehicle.AssignedDriverId.HasValue && vehicle.AssignedDriverId != Guid.Empty)
+                    {
+                        if (driversDict.TryGetValue(vehicle.AssignedDriverId.Value, out var driver))
+                        {
+                            vehicle.AssignedDriver = driver;
+                        }
+                        else
+                        {
+                            vehicle.AssignedDriver = null;
+                        }
+                    }
                 }
             }
-            // Восстанавливаем связи транспорта с водителем
-            foreach (var vehicle in Vehicles)
+            catch (Exception ex)
             {
-                if (vehicle.AssignedDriverId.HasValue && vehicle.AssignedDriverId != Guid.Empty)
-                {
-                    vehicle.AssignedDriver = driversDict[vehicle.AssignedDriverId.Value];
-                }
+                throw;
             }
+
         }
         private void RestoreOrderReferences()
         {
-            // Создаем словарь клиентов для быстрого поиска
-            // Так как у Client нет Id, создаем словарь на основе уникальных данных
             var clientsDict = new Dictionary<string, Client>();
 
             foreach (var client in Clients)
@@ -121,23 +141,52 @@ namespace Automobile_Company.Services
             // Восстанавливаем связи заказа
             foreach (var order in Orders)
             {
-                // Восстанавливаем отправителя
-                if (!string.IsNullOrEmpty(order.SenderId.ToString()))
+                try
                 {
-                    order.Sender = clientsDict[order.SenderId];
-                }
+                    // Восстанавливаем отправителя
+                    if (!string.IsNullOrEmpty(order.SenderId?.ToString()))
+                    {
+                        string senderKey = order.SenderId.ToString();
+                        if (clientsDict.TryGetValue(senderKey, out var sender))
+                        {
+                            order.Sender = sender;
+                        }
+                        else
+                        {
+                            order.Sender = null;
+                        }
+                    }
 
-                // Восстанавливаем получателя
-                if (!string.IsNullOrEmpty(order.ReceiverId.ToString()))
-                {
-                    order.Receiver = clientsDict[order.ReceiverId];
-                }
+                    // Восстанавливаем получателя
+                    if (!string.IsNullOrEmpty(order.ReceiverId?.ToString()))
+                    {
+                        string receiverKey = order.ReceiverId.ToString();
+                        if (clientsDict.TryGetValue(receiverKey, out var receiver))
+                        {
+                            order.Receiver = receiver;
+                        }
+                        else
+                        {
+                            order.Receiver = null;
+                        }
+                    }
 
-                // Восстанавливаем связи грузов с заказом
-                foreach (var cargo in order.CargoItems)
+                    // Проверяем, что отправитель и получатель не null
+                    if (order.Sender == null || order.Receiver == null)
+                    {
+                        Console.WriteLine($"ВНИМАНИЕ: Заказ {order.Id} имеет неполные данные клиентов");
+                    }
+
+                    // Восстанавливаем связи грузов с заказом
+                    foreach (var cargo in order.CargoItems)
+                    {
+                        cargo.AssignedOrder = order;
+                        cargo.AssignedOrderId = order.Id;
+                    }
+                }
+                catch (Exception ex)
                 {
-                    cargo.AssignedOrder = order;
-                    cargo.AssignedOrderId = order.Id;
+                    throw;
                 }
             }
         }
@@ -155,49 +204,60 @@ namespace Automobile_Company.Services
         }
         private void RestoreTripReferences()
         {
-            MessageBox.Show($"Вход",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Information);
             // Создаем словари для быстрого поиска
             var vehiclesDict = Vehicles.ToDictionary(v => v.Id);
             var driversDict = Drivers.ToDictionary(d => d.Id);
             var cargoDict = GetAllCargoItems().ToDictionary(c => c.Id);
-            MessageBox.Show($"прошел переменные",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Information);
+
             foreach (var trip in Trips)
             {
-                // Восстанавливаем транспорт
-                if (trip.VehicleId.HasValue && trip.VehicleId != Guid.Empty)
+                try
                 {
-                    trip.Vehicle = vehiclesDict[trip.VehicleId.Value];
-                }
-                MessageBox.Show($"Первый форич",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Восстанавливаем экипаж
-                var restoredCrews = new List<Driver>();
-                foreach (var driverId in trip.CrewIds ?? new List<Guid>())
-                {
-                    if (driverId != Guid.Empty)
+                    // Восстанавливаем транспорт
+                    if (trip.VehicleId.HasValue && trip.VehicleId != Guid.Empty)
                     {
-                        var driver = driversDict[driverId];
-                        if (driver != null)
-                            restoredCrews.Add(driver);
+                        if (vehiclesDict.TryGetValue(trip.VehicleId.Value, out var vehicle))
+                        {
+                            trip.Vehicle = vehicle;
+                        }
+                        else
+                        {
+                            trip.Vehicle = null;
+                        }
                     }
-                }
-                trip.Crews = restoredCrews;
-                MessageBox.Show($"второй форич",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Восстанавливаем грузы
-                var restoredItems = new List<CargoItem>();
-                foreach (var cargoId in trip.ItemIds ?? new List<Guid>())
-                {
-                    if (cargoId != Guid.Empty)
+
+                    // Восстанавливаем экипаж
+                    var restoredCrews = new List<Driver>();
+                    foreach (var driverId in trip.CrewIds ?? new List<Guid>())
                     {
-                        var cargo = cargoDict[cargoId];
-                        if (cargo != null)
-                            restoredItems.Add(cargo);
+                        if (driverId != Guid.Empty)
+                        {
+                            if (driversDict.TryGetValue(driverId, out var driver))
+                            {
+                                restoredCrews.Add(driver);
+                            }
+                        }
                     }
+                    trip.Crews = restoredCrews;
+
+                    // Восстанавливаем грузы
+                    var restoredItems = new List<CargoItem>();
+                    foreach (var cargoId in trip.ItemIds ?? new List<Guid>())
+                    {
+                        if (cargoId != Guid.Empty)
+                        {
+                            if (cargoDict.TryGetValue(cargoId, out var cargo))
+                            {
+                                restoredItems.Add(cargo);
+                            }
+                        }
+                    }
+                    trip.Items = restoredItems;
                 }
-                trip.Items = restoredItems;
+                catch (Exception ex)
+                {
+                    throw;
+                }
             }
         }
         private List<CargoItem> GetAllCargoItems()
@@ -410,6 +470,11 @@ namespace Automobile_Company.Services
 
             Drivers.Remove(driver);
             driver.AssignedVehicle = null;
+        }
+        public void DeleteTrip(Trip trip)
+        {
+            if (trip == null) throw new ArgumentNullException(nameof(trip));
+            Trips.Remove(trip);
         }
         public void DeleteVehicle(Vehicle vehicle)
         {

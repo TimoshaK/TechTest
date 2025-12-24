@@ -265,7 +265,7 @@ namespace Automobile_Company.Model
         }
 
         public bool CanEdit => Status == OrderStatus.New || Status == OrderStatus.WaitingPayment || Status == OrderStatus.Paid;
-        public bool CanCancel => Status == OrderStatus.New || Status == OrderStatus.WaitingPayment;
+        public bool CanCancel => Status == OrderStatus.New || Status == OrderStatus.WaitingPayment|| Status == OrderStatus.Cancelled;
         public bool CanCreateTrip => PaymentStatus == PaymentStatus.Paid && Status == OrderStatus.Paid;
     }
 }

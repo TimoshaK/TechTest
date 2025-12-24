@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client xsi:type="IndividualClient">
+    <Phone>85</Phone>
+    <FullName>785</FullName>
+    <PassportSeries>75</PassportSeries>
+    <PassportNumber>72</PassportNumber>
+    <PassportIssueDate>0001-01-01T00:00:00</PassportIssueDate>
+  </Client>
+  <Client xsi:type="IndividualClient">
+    <Phone>5257</Phone>
+    <FullName>25</FullName>
+    <PassportSeries>72</PassportSeries>
+    <PassportNumber>7785</PassportNumber>
+    <PassportIssueDate>0001-01-01T00:00:00</PassportIssueDate>
+  </Client>
+  <Client xsi:type="IndividualClient">
+    <Phone>453</Phone>
+    <FullName>45345</FullName>
+    <PassportSeries>453</PassportSeries>
+    <PassportNumber>453</PassportNumber>
+    <PassportIssueDate>0001-01-01T00:00:00</PassportIssueDate>
+  </Client>
+  <Client xsi:type="IndividualClient">
+    <Phone>4534</Phone>
+    <FullName>5453</FullName>
+    <PassportSeries>45453</PassportSeries>
+    <PassportNumber>434</PassportNumber>
+    <PassportIssueDate>0001-01-01T00:00:00</PassportIssueDate>
+  </Client>
+</ArrayOfClient>

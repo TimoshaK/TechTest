@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <Id>20cde61c-ec66-4103-b833-ae4746528bd5</Id>
+    <OrderDate>2025-12-24T07:34:34.6376396+07:00</OrderDate>
+    <LoadingAddress>453</LoadingAddress>
+    <SenderId>IND_5453_4534_45453_434</SenderId>
+    <ReceiverId>IND_45345_453_453_453</ReceiverId>
+    <UnloadingAddress>453</UnloadingAddress>
+    <RouteLength>4534</RouteLength>
+    <OrderCost>453</OrderCost>
+    <CargoItems />
+    <Status>Completed</Status>
+    <PaymentStatus>Paid</PaymentStatus>
+    <PaymentMethod>Cash</PaymentMethod>
+    <PaidAmount>0</PaidAmount>
+    <PaymentDate xsi:nil="true" />
+    <Progress>100</Progress>
+  </Order>
+</ArrayOfOrder>
