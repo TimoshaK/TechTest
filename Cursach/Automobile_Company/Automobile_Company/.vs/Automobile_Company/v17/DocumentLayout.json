@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,15 +23,11 @@
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\createtripviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\editorderdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\viewmodels\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\viewmodels\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:viewmodels\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\dialogs\\editorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\editorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\editorderdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,7 +75,7 @@
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\orderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\model\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\model\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -91,15 +91,15 @@
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createvehicledialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\converters\\driverassignmenttooltipconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\driverassignmenttooltipconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\driverassignmenttooltipconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\converters\\caneditdriverassignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\caneditdriverassignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\caneditdriverassignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -131,7 +131,7 @@
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\orderstatustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\dialogs\\createdriverdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\dialogs\\createdriverdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:dialogs\\createdriverdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -139,11 +139,11 @@
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:model\\enums\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\converters\\vehicleimageconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\converters\\vehicleimageconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:converters\\vehicleimageconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|c:\\users\\u-ber\\source\\techtest\\techtest\\cursach\\automobile_company\\automobile_company\\images\\default.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "AbsoluteMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\images\\default.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{3156B941-5F26-4E05-B6A9-7BACBD763C46}|Automobile_Company.csproj|solutionrelative:images\\default.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
@@ -218,11 +218,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
@@ -230,8 +230,7 @@
               "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
               "ViewState": "AgIAALoBAAAAAAAAAAAcwHoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T19:55:39.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T19:55:39.454Z"
             },
             {
               "$type": "Document",
@@ -243,8 +242,7 @@
               "RelativeToolTip": "Dialogs\\EditOrderDialog.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAwwB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T19:55:06.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T19:55:06.044Z"
             },
             {
               "$type": "Document",
@@ -256,12 +254,11 @@
               "RelativeToolTip": "ViewModels\\EditOrderViewModel.cs",
               "ViewState": "AgIAAKEAAAAAAAAAAAAQwKsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T19:54:06.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T19:54:06.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "EditOrderDialog.xaml",
               "DocumentMoniker": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\EditOrderDialog.xaml",
               "RelativeDocumentMoniker": "Dialogs\\EditOrderDialog.xaml",
@@ -281,8 +278,7 @@
               "RelativeToolTip": "Model\\IClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T10:35:37.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T10:35:37.764Z"
             },
             {
               "$type": "Document",
@@ -294,8 +290,7 @@
               "RelativeToolTip": "Converters\\DriverAssignmentTooltipConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T09:27:43.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T09:27:43.606Z"
             },
             {
               "$type": "Document",
@@ -307,8 +302,7 @@
               "RelativeToolTip": "Converters\\CanEditDriverAssignmentConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T09:11:41.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T09:11:41.402Z"
             },
             {
               "$type": "Document",
@@ -320,8 +314,7 @@
               "RelativeToolTip": "Converters\\StringToVisibilityConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T09:10:43.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T09:10:43.695Z"
             },
             {
               "$type": "Document",
@@ -332,8 +325,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateDriverDialog.xaml",
               "RelativeToolTip": "Dialogs\\CreateDriverDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-21T08:11:55.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T08:11:55.177Z"
             },
             {
               "$type": "Document",
@@ -344,8 +336,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Images\\default.jpg",
               "RelativeToolTip": "Images\\default.jpg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-12-20T18:19:11.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T18:19:11.292Z"
             },
             {
               "$type": "Document",
@@ -357,12 +348,11 @@
               "RelativeToolTip": "Converters\\VehicleImageConverters.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T18:08:44.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T18:08:44.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Trip.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Model\\Trip.cs",
               "RelativeDocumentMoniker": "Model\\Trip.cs",
@@ -370,8 +360,7 @@
               "RelativeToolTip": "Model\\Trip.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAmwAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:19:13.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:19:13.122Z"
             },
             {
               "$type": "Document",
@@ -382,8 +371,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T22:36:42.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T22:36:42.384Z"
             },
             {
               "$type": "Document",
@@ -395,8 +383,7 @@
               "RelativeToolTip": "Model\\Client.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA3wAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T23:45:13.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T23:45:13.959Z"
             },
             {
               "$type": "Document",
@@ -420,8 +407,7 @@
               "RelativeToolTip": "Model\\Vehicle.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T23:45:06.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T23:45:06.049Z"
             },
             {
               "$type": "Document",
@@ -433,8 +419,7 @@
               "RelativeToolTip": "Model\\Driver.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T20:15:07.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T20:15:07.46Z"
             },
             {
               "$type": "Document",
@@ -446,12 +431,11 @@
               "RelativeToolTip": "ViewModels\\CreateDriverViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T20:11:46.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T20:11:46.319Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CreateTripViewModel.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\ViewModels\\CreateTripViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\CreateTripViewModel.cs",
@@ -459,8 +443,7 @@
               "RelativeToolTip": "ViewModels\\CreateTripViewModel.cs",
               "ViewState": "AgIAALcAAAAAAAAAAAAIwDgBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T00:49:49.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T00:49:49.586Z"
             },
             {
               "$type": "Document",
@@ -472,8 +455,7 @@
               "RelativeToolTip": "ViewModels\\CreateVehicleViewModel.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAvwHkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T20:52:17.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T20:52:17.415Z"
             },
             {
               "$type": "Document",
@@ -497,8 +479,7 @@
               "RelativeToolTip": "Model\\Order.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwPMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T17:58:35.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T17:58:35.545Z"
             },
             {
               "$type": "Document",
@@ -521,8 +502,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateTripDialog.xaml",
               "RelativeToolTip": "Dialogs\\CreateTripDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-17T22:13:29.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T22:13:29.288Z"
             },
             {
               "$type": "Document",
@@ -534,8 +514,7 @@
               "RelativeToolTip": "Dialogs\\CreateTripDialog.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T22:14:16.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T22:14:16.516Z"
             },
             {
               "$type": "Document",
@@ -547,8 +526,7 @@
               "RelativeToolTip": "Dialogs\\CreateOrderDialog.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T12:28:21.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T12:28:21.735Z"
             },
             {
               "$type": "Document",
@@ -559,8 +537,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateVehicleDialog.xaml",
               "RelativeToolTip": "Dialogs\\CreateVehicleDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-18T00:25:25.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T00:25:25.042Z"
             },
             {
               "$type": "Document",
@@ -572,8 +549,7 @@
               "RelativeToolTip": "Model\\OrderExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T22:19:27.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T22:19:27.807Z"
             },
             {
               "$type": "Document",
@@ -613,13 +589,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DataService.cs",
               "DocumentMoniker": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Services\\DataService.cs",
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Services\\DataService.cs",
               "RelativeToolTip": "Services\\DataService.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAhwFMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowFMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T15:42:46.311Z",
               "EditorCaption": ""
@@ -634,8 +610,7 @@
               "RelativeToolTip": "ViewModels\\CreateOrderViewModel.cs",
               "ViewState": "AgIAACwBAAAAAAAAAAAlwEMBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:56:38.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T11:56:38.601Z"
             },
             {
               "$type": "Document",
@@ -647,8 +622,7 @@
               "RelativeToolTip": "Model\\CargoItem.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T17:58:28.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T17:58:28.24Z"
             },
             {
               "$type": "Document",
@@ -659,8 +633,7 @@
               "ToolTip": "C:\\Users\\U-ber\\source\\TechTest\\TechTest\\Cursach\\Automobile_Company\\Automobile_Company\\Dialogs\\CreateOrderDialog.xaml",
               "RelativeToolTip": "Dialogs\\CreateOrderDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-19T22:08:50.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-19T22:08:50.174Z"
             },
             {
               "$type": "Document",
@@ -684,8 +657,7 @@
               "RelativeToolTip": "Converters\\OrderToDisplayConverter.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T00:32:34.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T00:32:34.115Z"
             },
             {
               "$type": "Document",
@@ -697,8 +669,7 @@
               "RelativeToolTip": "Model\\Enums\\TripStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:32:03.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-19T15:32:03.416Z"
             },
             {
               "$type": "Document",
@@ -710,8 +681,7 @@
               "RelativeToolTip": "Dialogs\\CreateVehicleDialog.xaml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T21:11:56.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T21:11:56.578Z"
             },
             {
               "$type": "Document",
@@ -723,8 +693,7 @@
               "RelativeToolTip": "Dialogs\\CreateDriverDialog.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T20:14:38.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T20:14:38.93Z"
             },
             {
               "$type": "Document",
@@ -808,8 +777,7 @@
               "RelativeToolTip": "Model\\Enums\\OrderStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T21:48:11.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T21:48:11.766Z"
             },
             {
               "$type": "Document",
@@ -821,8 +789,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T09:54:38.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T09:54:38.961Z"
             },
             {
               "$type": "Document",
@@ -870,8 +837,7 @@
               "RelativeToolTip": "Converters\\OrderStatusToColorConverter.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAawCUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:05:56.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T11:05:56.213Z"
             }
           ]
         }

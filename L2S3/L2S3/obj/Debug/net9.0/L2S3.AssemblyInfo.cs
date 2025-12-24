@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("L2S3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4b7b27d863df536976216301497c0bb6c131d34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+824e15025c518876f060c4a010f8df26769d4df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("L2S3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("L2S3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
