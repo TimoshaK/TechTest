@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
-using Arkanoid.Core.Entities;
+using Arkanoid.Entities;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public class ArkanoidGame : IGameStateManager, IGameObjects
     {

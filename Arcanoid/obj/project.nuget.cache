@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "CMBIFlCg9m8=",
+  "dgSpecHash": "3TbrVmnoPb0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\U-ber\\TechTest\\Arcanoid\\Arcanoid.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Тимофей\\TechTest\\Arcanoid\\Arcanoid.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Тимофей\\.nuget\\packages\\csfml\\2.6.1\\csfml.2.6.1.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\sfml.graphics\\2.6.1\\sfml.graphics.2.6.1.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\sfml.system\\2.6.1\\sfml.system.2.6.1.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\sfml.window\\2.6.1\\sfml.window.2.6.1.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\Тимофей\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512"
+  ],
   "logs": []
 }

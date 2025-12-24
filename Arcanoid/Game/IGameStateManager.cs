@@ -1,6 +1,6 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public interface IGameStateManager
     {

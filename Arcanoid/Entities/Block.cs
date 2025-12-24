@@ -1,7 +1,7 @@
-﻿using Arkanoid.Core.Game;
+﻿using Arkanoid.Game;
 using System;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public class Block : ICollidable, IRenderDataProvider
     {

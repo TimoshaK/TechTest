@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public interface IUpdatable
     {

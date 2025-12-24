@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Arkanoid.Core.Entities
+namespace Arkanoid.Entities
 {
     public interface ICollidable
     {

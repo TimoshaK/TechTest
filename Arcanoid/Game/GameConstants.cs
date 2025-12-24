@@ -1,5 +1,5 @@
-﻿using Arkanoid.Core.Entities;
-namespace Arkanoid.Core.Game
+﻿using Arkanoid.Entities;
+namespace Arkanoid.Game
 {
     public static class GameConstants
     {

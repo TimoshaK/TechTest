@@ -1,7 +1,7 @@
-﻿using Arkanoid.Core.Entities;
+﻿using Arkanoid.Entities;
 using System.Collections.Generic;
 
-namespace Arkanoid.Core.Game
+namespace Arkanoid.Game
 {
     public interface IGameObjects
     {

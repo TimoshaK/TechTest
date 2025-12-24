@@ -1,4 +1,4 @@
-﻿namespace Arkanoid.Core.Entities
+﻿namespace Arkanoid.Entities
 {
     public struct Vector2
     {

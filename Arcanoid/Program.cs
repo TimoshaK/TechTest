@@ -1,2 +1,24 @@
-﻿
-// Я пользуюсь мессенджером MAX. Присоединяйся! https://max.ru/u/f9LHodD0cOKC5retnEHfEHnf-dSzw4RQMiZ7HWBZp2Fc9QMyEZUnOMtLx90
+﻿using System;
+using Arkanoid.Game;
+
+namespace Arkanoid
+{
+    class Program
+    {
+        [STAThread]
+        static void Main(string[] args)
+        {
+            try
+            {
+                using (var gameWindow = new GameWindow())
+                {
+                    gameWindow.Run();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+    }
+}
