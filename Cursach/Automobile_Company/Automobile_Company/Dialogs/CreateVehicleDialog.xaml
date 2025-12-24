@@ -1,0 +1,261 @@
+﻿<Window x:Class="Automobile_Company.Dialogs.CreateVehicleDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automobile_Company"
+        xmlns:vm="clr-namespace:Automobile_Company.ViewModels"
+        xmlns:converters="clr-namespace:Automobile_Company.Converters"
+        xmlns:enums="clr-namespace:Automobile_Company.Model.Enums"
+        mc:Ignorable="d"
+        Title="Добавление автомобиля" 
+        Height="700" Width="550"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:CreateVehicleViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <converters:StringToImageConverter x:Key="StringToImageConverter"/>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="#2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1976D2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="SectionHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Foreground" Value="#2196F3"/>
+        </Style>
+
+        <Style x:Key="PhotoButtonStyle" TargetType="Button">
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="Margin" Value="0,5,0,10"/>
+            <Setter Property="Background" Value="#757575"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#616161"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ImagePreviewStyle" TargetType="Image">
+            <Setter Property="MaxHeight" Value="150"/>
+            <Setter Property="MaxWidth" Value="200"/>
+            <Setter Property="Margin" Value="0,5,0,10"/>
+            <Setter Property="Stretch" Value="Uniform"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Добавление нового автомобиля" 
+                   Style="{StaticResource SectionHeaderStyle}"
+                   Grid.Row="0"/>
+
+        <!-- Основное содержимое -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Фото автомобиля -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Фото автомобиля" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <Button Content="Загрузить фото" 
+                            Command="{Binding LoadPhotoCommand}"
+                            Style="{StaticResource PhotoButtonStyle}"/>
+
+                    <Image Source="{Binding PhotoPath, Converter={StaticResource StringToImageConverter}}"
+                           Style="{StaticResource ImagePreviewStyle}"/>
+                    <TextBlock Text="Путь к фото:" FontSize="11" Foreground="#666"/>
+                    <TextBlock Text="{Binding PhotoPath}" FontSize="11" Foreground="#666"
+                               TextWrapping="Wrap" Margin="0,0,0,10"/>
+                </StackPanel>
+
+                <!-- Основная информация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Основная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <TextBlock Text="Государственный номер*"/>
+                    <TextBox Text="{Binding LicensePlate, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Марка*"/>
+                            <TextBox Text="{Binding Brand, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Модель*"/>
+                            <TextBox Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Тип кузова"/>
+                    <ComboBox SelectedItem="{Binding BodyType}">
+                        <ComboBox.Items>
+                            <enums:VehicleBodyType>Truck</enums:VehicleBodyType>
+                            <enums:VehicleBodyType>Trailer</enums:VehicleBodyType>
+                            <enums:VehicleBodyType>Tanker</enums:VehicleBodyType>
+                            <enums:VehicleBodyType>Refrigerator</enums:VehicleBodyType>
+                            <enums:VehicleBodyType>Van</enums:VehicleBodyType>
+                        </ComboBox.Items>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Технические характеристики -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Технические характеристики" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Грузоподъемность (т)*"/>
+                            <TextBox Text="{Binding LoadCapacity, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Назначение"/>
+                            <TextBox Text="{Binding Purpose, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Год выпуска*"/>
+                            <TextBox Text="{Binding YearOfManufacture, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Год кап. ремонта"/>
+                            <TextBox Text="{Binding YearOfOverhaul, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Пробег и обслуживание -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Пробег и обслуживание" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Пробег на начало года"/>
+                            <TextBox Text="{Binding MileageAtYearStart, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Текущий пробег"/>
+                            <TextBox Text="{Binding CurrentMileage, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Дата следующего ТО"/>
+                    <DatePicker SelectedDate="{Binding NextMaintenanceDate, UpdateSourceTrigger=PropertyChanged}"
+                                Margin="0,0,0,10"/>
+                </StackPanel>
+
+                <!-- Дополнительная информация -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Дополнительная информация" Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <TextBlock Text="Примечания"/>
+                    <TextBox Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}"
+                             Height="80" TextWrapping="Wrap" AcceptsReturn="True"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Кнопки действий -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Сохранить" Width="120" Padding="15,8"
+                    Command="{Binding SaveCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#4CAF50">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#388E3C"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Отмена" Width="120" Padding="15,8" Margin="10,0,0,0"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                    Background="#F44336">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#D32F2F"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
